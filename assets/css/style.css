@@ -832,6 +832,7 @@ ul.slick-dots {
 	min-height: 120px;
 	display: inline-block;
 	padding: 15px;
+	resize: none;
 	color: #6a6a6a;
 	font-size: 13px;
 	text-transform: none;
@@ -1022,6 +1023,7 @@ footer .contact-form textarea {
 	display: inline-block;
 	padding: 15px;
 	color: #aaa!important;
+	resize: none;
 	background-color: #343434;
 	font-size: 13px;
 	text-transform: none;
