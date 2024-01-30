@@ -43,7 +43,7 @@ class AppController {
     }
 
     public function property_details() {
-        include("views/property_details.php");
+        include("views/property-details.php");
     }
 }
 
