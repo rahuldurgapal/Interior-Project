@@ -38,6 +38,9 @@ switch($action) {
     case 'login':
         $appController->login();
         break;
+    case 'property_details':
+        $appController->property_details();
+        break;
     default:
       echo "<h1>404 Page Not Found";
       break;

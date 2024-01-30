@@ -41,6 +41,10 @@ class AppController {
     public function login() {
         include("views/login/index.html");
     }
+
+    public function property_details() {
+        include("views/property_details.php");
+    }
 }
 
 

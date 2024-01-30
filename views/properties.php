@@ -135,7 +135,7 @@
 
                 <p>House  /  For Sale  /  100 sq m  /  2010</p>
 
-                <a href="property-details.html" class="filled-button">View More</a>
+                <a href="index.php?action=property_details" class="filled-button">View More</a>
               </div>
             </div>
 
@@ -153,7 +153,7 @@
 
                 <p>House  /  For Sale  /  100 sq m  /  2010</p>
 
-                <a href="property-details.html" class="filled-button">View More</a>
+                <a href="index.php?action=property_details" class="filled-button">View More</a>
               </div>
             </div>
 
@@ -171,7 +171,7 @@
 
                 <p>House  /  For Sale  /  100 sq m  /  2010</p>
 
-                <a href="property-details.html" class="filled-button">View More</a>
+                <a href="index.php?action=property_details" class="filled-button">View More</a>
               </div>
             </div>
 
@@ -189,7 +189,7 @@
 
                 <p>House  /  For Sale  /  100 sq m  /  2010</p>
 
-                <a href="property-details.html" class="filled-button">View More</a>
+                <a href="index.php?action=property_details" class="filled-button">View More</a>
               </div>
             </div>
 
@@ -207,7 +207,7 @@
 
                 <p>House  /  For Sale  /  100 sq m  /  2010</p>
 
-                <a href="property-details.html" class="filled-button">View More</a>
+                <a href="index.php?action=property_details" class="filled-button">View More</a>
               </div>
             </div>
 
@@ -225,7 +225,7 @@
 
                 <p>House  /  For Sale  /  100 sq m  /  2010</p>
 
-                <a href="property-details.html" class="filled-button">View More</a>
+                <a href="index.php?action=property_details" class="filled-button">View More</a>
               </div>
             </div>
 
