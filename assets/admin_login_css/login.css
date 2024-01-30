@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url('../image/background.jpg');
+    background-image: url('../admin_login_image/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;

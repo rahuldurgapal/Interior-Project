@@ -32,6 +32,12 @@ switch($action) {
     case 'terms':
         $appController->terms();
         break;
+    case 'admin':
+        $appController->admin();
+        break;
+    case 'login':
+        $appController->login();
+        break;
     default:
       echo "<h1>404 Page Not Found";
       break;

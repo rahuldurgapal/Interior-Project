@@ -33,6 +33,14 @@ class AppController {
     public function terms() {
         include("views/terms.php");
     }
+
+    public function admin() {
+        include("views/admin/index.html");
+    }
+
+    public function login() {
+        include("views/login/index.html");
+    }
 }
 
 
