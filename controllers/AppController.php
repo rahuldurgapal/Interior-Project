@@ -1,51 +1,41 @@
 <?php
+ include("DatabaseController.php");
+include("../models/UserModel.php");
+$action = $_GET['action'];
 
-class AppController {
 
-    public function home() {
-        include("views/index.php");
+    
+   $db = new DatabaseController();
+   $con = $db->getConnection();
+    $usermodel = new UserModel($con);
+     
+
+
+    if($action === "send_request") {
+       $name = filter_input(INPUT_POST, "name");
+       $email = filter_input(INPUT_POST, "email");
+       $subject = filter_input(INPUT_POST, "subject");
+       $message = filter_input(INPUT_POST, "message");
+       
+       if(!$name || !$email || !$subject || !$message) {
+        echo "Invalid Input";
+        header("location: ../index.php");
+      }
+
+       $usermodel->sendMessage(['name'=>$name, 'email'=>$email, 'subject'=>$subject, 'message'=>$message]);
+       if(!$name || !$email || !$subject || !$message) {
+        echo "Invalid Input";
+        header("location: ../index.php");
+      }
+       header("location: ../index.php");
+
     }
 
-    public function properties() {
-        include("views/properties.php");
-    }
+     else {
+        echo "<h1> 404 Page not found </h1>";
+     }
+   
 
-    public function about() {
-        include("views/about.php");
-    }
-
-    public function contact() {
-        include("views/contact.php");
-    }
-
-    public function team() {
-        include("views/team.php");
-    }
-
-    public function blog() {
-        include("views/blog.php");
-    }
-
-    public function testimonials() {
-        include("views/testimonials.php");
-    }
-
-    public function terms() {
-        include("views/terms.php");
-    }
-
-    public function admin() {
-        include("views/admin/index.html");
-    }
-
-    public function login() {
-        include("views/login/index.html");
-    }
-
-    public function property_details() {
-        include("views/property-details.php");
-    }
-}
 
 
 

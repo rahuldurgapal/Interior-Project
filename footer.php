@@ -23,11 +23,11 @@
           <div class="col-md-3 footer-item">
             <h4>Additional Pages</h4>
             <ul class="menu-list">
-              <li><a href="index.php?action=about">About Us</a></li>
-              <li><a href="index.php?action=blog">Blog</a></li>
-              <li><a href="index.php?action=testimonials">Testimonials</a></li>
-              <li><a href="index.php?action=contact">Contact Us</a></li>
-              <li><a href="index.php?action=terms">Terms</a></li>
+              <li><a href="about.php">About Us</a></li>
+              <li><a href="blog.php">Blog</a></li>
+              <li><a href="testimonials.php">Testimonials</a></li>
+              <li><a href="contact.php">Contact Us</a></li>
+              <li><a href="terms.php">Terms</a></li>
             </ul>
           </div>
           <div class="col-md-3 footer-item last-item">

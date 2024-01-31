@@ -32,34 +32,39 @@
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.php?action=home"><h2>LOGO</h2></a>
+          <a class="navbar-brand" href="index.php"><h2>LOGO</h2></a>
+          
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.php?action=home">Home
+                <a class="nav-link" href="index.php">Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.php?action=properties">Properties</a>
+                <a class="nav-link" href="about.php">About</a>
              
               </li>
               <li class="nav-item dropdown">
-                <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="properties.php" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
               
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="index.php?action=about">About Us</a>
-                    <a class="dropdown-item" href="index.php?action=team">Team</a>
-                    <a class="dropdown-item" href="index.php?action=blog">Blog</a>
-                    <a class="dropdown-item" href="index.php?action=testimonials">Testimonials</a>
-                    <a class="dropdown-item" href="index.php?action=terms">Terms</a>
+                    <!-- <a class="dropdown-item" href="properties.php">Services</a> -->
+                    <a class="dropdown-item" href="#">Kitchen</a>
+                    <a class="dropdown-item" href="#">Bathroom</a>
+                    <a class="dropdown-item" href="#">Livinig Room</a>
+                    <a class="dropdown-item" href="#">Bedroom</a>
+                    <a class="dropdown-item" href="#">Balcony</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.php?action=contact">Contact Us</a>
+                <a class="nav-link" href="#">Clients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.php">Contact Us</a>
               </li>
             </ul>
           </div>
