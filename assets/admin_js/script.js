@@ -27,6 +27,6 @@ sidebarToggle.addEventListener('click', () => {
     if(sidebar.classList.contains('close')){
         localStorage.setItem("status", "close");
     }else{
-        localStorage.setItem("stauts", "open");
+        localStorage.setItem("status", "open");
     }
 })

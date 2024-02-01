@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
+    <link rel="icon" href="./assets/images/icon.png">
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
@@ -177,7 +178,7 @@
                 <span>Who we are</span>
                 <h2>Get to know about <em>our company</em></h2>
                 <p>Curabitur pulvinar sem a leo tempus facilisis. Sed non sagittis neque. Nulla conse quat tellus nibh, id molestie felis sagittis ut. Nam ullamcorper tempus ipsum in cursus</p>
-                <a href="about.html" class="filled-button">Read More</a>
+                <a href="about.php" class="filled-button">Read More</a>
               </div>
             </div>
           </div>
@@ -203,7 +204,7 @@
             <br>
 
             <div class="text-center">
-              <a href="blog.html" class="filled-button">Read More</a>
+              <a href="blog.php" class="filled-button">Read More</a>
             </div>
 
             <br>
@@ -213,17 +214,17 @@
             <section class='tabs-content'>
               <article id='tabs-1'>
                 <img src="assets/images/blog-image-1-940x460.jpg" alt="">
-                <h4><a href="blog-details.html">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h4>
+                <h4><a href="blog-details.php">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h4>
                 <p>Sed ut dolor in augue cursus ultrices. Vivamus mauris turpis, auctor vel facilisis in, tincidunt vel diam. Sed vitae scelerisque orci. Nunc non magna orci. Aliquam commodo mauris ante, quis posuere nibh vestibulum sit amet.</p>
               </article>
               <article id='tabs-2'>
                 <img src="assets/images/blog-image-2-940x460.jpg" alt="">
-                <h4><a href="blog-details.html">Mauris lobortis quam id dictum dignissim</a></h4>
+                <h4><a href="blog-details.php">Mauris lobortis quam id dictum dignissim</a></h4>
                 <p>Sed ut dolor in augue cursus ultrices. Vivamus mauris turpis, auctor vel facilisis in, tincidunt vel diam. Sed vitae scelerisque orci. Nunc non magna orci. Aliquam commodo mauris ante, quis posuere nibh vestibulum sit amet</p>
               </article>
               <article id='tabs-3'>
                 <img src="assets/images/blog-image-3-940x460.jpg" alt="">
-                <h4><a href="blog-details.html">Class aptent taciti sociosqu ad litora torquent per</a></h4>
+                <h4><a href="blog-details.php">Class aptent taciti sociosqu ad litora torquent per</a></h4>
                 <p>Mauris lobortis quam id dictum dignissim. Donec pellentesque erat dolor, cursus dapibus turpis hendrerit quis. Suspendisse at suscipit arcu. Nulla sed erat lectus. Nulla facilisi. In sit amet neque sapien. Donec scelerisque mi at gravida efficitur. Nunc lacinia a est eu malesuada. Curabitur eleifend elit sapien, sed pulvinar orci luctus eget. 
                 </p>
               </article>

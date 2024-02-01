@@ -11,9 +11,10 @@
     --primary-color: #a5c639;
     --panel-color: #FFF;
     --text-color: #000;
-    --black-light-color: #707070;
+    --black-light-color: #939191;
+    --white-color: #e2f6c2;
     --border-color: #e6e5e5;
-    --toggle-color: #ddd;
+    --toggle-color: #7d7878;
     --box1-color: #4da3ff;
     --box2-color: #ffe6ac;
     --box3-color: #e7d1fc;
@@ -40,6 +41,7 @@ body.dark{
     --box2-color: #3a3b3c;
     --box3-color: #3a3b3c;
     --title-icon-color: #ccc;   
+    --white-color: #324132;
 }
 
 nav{
@@ -47,6 +49,8 @@ nav{
     top: 0;
     left: 0;
     height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding: 10px 14px;
     width: 250px;
     background-color: var(--panel-color);
@@ -284,121 +288,6 @@ nav.close ~ .panel .top{
     border-radius: 50%;
 }
 
-.dashboard .dash-content{
-    padding-top: 50px;
-}
-
-.dash-content .title{
-    display: flex;
-    align-items: center;
-    margin: 70px 0 30px 0;
-}
-
-.dash-content .title i{
-    position: relative;
-    height: 35px;
-    width: 35px;
-    background-color: var(--primary-color);
-    border-radius: 6px;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-}
-
-.dash-content .title .text{
-    font-size: 24px;
-    font-weight: 500;
-    color: var(--text-color);
-    margin-left: 10px;
-}
-
-.dash-content .boxes{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.dash-content .boxes .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 12px;
-    padding: 15px 20px;
-    width: calc(100% / 3 - 15px);
-    background-color: var(--box1-color);
-    transition: var(--tran-03);
-}
-
-.boxes .box i{
-    font-size: 35px;
-    color: var(--text-color);
-}
-
-.boxes .box .text{
-    white-space: nowrap;
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--text-color);
-}
-
-.boxes .box .number{
-    white-space: nowrap;
-    font-size: 40px;
-    font-weight: 500;
-    color: var(--text-color);
-}
-
-.boxes .box.box2{
-    background-color: var(--box2-color);
-}
-
-.boxes .box.box3{
-    background-color: var(--box3-color);
-}
-
-.dash-content .activity .activity-data{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.activity .activity-data{
-    display: flex;
-}
-
-.activity-data .data{
-    display: flex;
-    flex-direction: column;
-    margin: 0 15px;
-}
-
-.activity-data .data-title{
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--text-color);
-}
-
-.activity-data .data .data-list{
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 20px;
-    white-space: nowrap;
-    color: var(--text-color);
-}
-
-.activity-data .Status .data-list{
-    background-color: var(--primary-color);
-    width: fit-content;
-    border-radius: 5px;
-    color: #000;
-    cursor: pointer;
-    padding: 0 10px;
-}
-
 @media (max-width: 1000px) {
     nav{
         width: 73px;
@@ -447,24 +336,10 @@ nav.close ~ .panel .top{
         left: 250px;
         width: calc(100% - 250px);
     }
-
-    .activity .activity-data{
-        overflow-y: auto;
-    }
-}
-
-@media (max-width: 780px) {
-    .dash-content .boxes .box{
-        margin-top: 15px;
-    }
 }
 
 
 @media (max-width: 600px) {
-    .dash-content .boxes .box{
-        width: 100%;
-    }
-
     nav{
         width: 73px;
     }
