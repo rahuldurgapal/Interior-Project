@@ -1,11 +1,6 @@
-<div id="preloader">
-    <div class="jumper">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</div>
-
+<?php 
+        include("./preloader.php"); 
+?>
 <nav>
         <div class="logo-name">
             <div class="logo-image">
