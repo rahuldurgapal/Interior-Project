@@ -244,7 +244,7 @@ header .navbar {
 	top: 0;
 	position: fixed;
 	height: 100px;
-	background-color: #fff!important;
+	background-color: #475b3d!important;
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
 }
 .background-header .navbar-brand h2 {
@@ -310,7 +310,7 @@ header .navbar {
 }
 .navbar .navbar-toggler {
 	border-color: #fff;
-	background-color: #454444;	
+	background-color: #475b3d;	
 	height: 36px;
 	outline: none;
 	border-radius: 30px;
