@@ -81,7 +81,7 @@
                         <span class="data-list">NEW</span>
                     </div>
 
-                    <div class="data Status">
+                    <div class="data status">
                         <span class="data-title">Status</span>
                         <span class="data-list">View</span>
                         <span class="data-list">View</span>

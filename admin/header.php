@@ -47,7 +47,7 @@
                 </li>
 
                 <li>
-                    <a href="#" id="">
+                    <a href="./setting.php" id="">
                         <i class="uil uil-setting"></i>
                         <span class="link-name">Edit Profile</span>
                     </a>
