@@ -67,7 +67,7 @@ a.border-button:hover {
 .section-heading h2 {
 	font-size: 36px;
 	font-weight: 600;
-	color: #1e1e1e;
+	color: #ffffff;
 }
 
 .section-heading em {
@@ -251,7 +251,7 @@ header .navbar {
 	color: #a4c639!important;
 }
 .background-header .navbar-nav a.nav-link {
-	color: #1e1e1e!important;
+	color: #ffffff!important;
 }
 .background-header .navbar-nav .nav-link:hover,
 .background-header .navbar-nav .active>.nav-link,
@@ -1378,11 +1378,11 @@ footer .contact-form button.filled-button:hover {
 	#navbarResponsive {
 	    z-index: 99999;
 	    position: absolute;
-	    top: 80px;
+	    top: 100px;
 	    left: 0;
 	    width: 100%;
 	    text-align: center;
-	    background-color: #fff;
+	    background-color: #475b3d;
 	    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
 	}
 	.navbar .navbar-nav .nav-item {
@@ -1393,7 +1393,7 @@ footer .contact-form button.filled-button:hover {
 	}
 	.navbar .navbar-nav a.nav-link {
 		padding: 15px 0px;
-		color: #1e1e1e!important;
+		color: #ffffff!important;
 	}
 	.navbar .navbar-nav .nav-link:hover,
 	.navbar .navbar-nav .active>.nav-link,
