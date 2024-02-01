@@ -1,3 +1,11 @@
+<div id="preloader">
+    <div class="jumper">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
 <nav>
         <div class="logo-name">
             <div class="logo-image">

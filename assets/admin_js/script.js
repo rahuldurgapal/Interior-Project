@@ -1,3 +1,9 @@
+document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener("load", function () {
+        document.getElementById("preloader").style.display = "none";
+    });
+});
+
 const body = document.querySelector('body');
 const modeToggle = body.querySelector('.mode-toggle');
 const sidebarToggle = body.querySelector('.sidebar-toggle');
