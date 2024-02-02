@@ -53,11 +53,14 @@
               
                 <div class="dropdown-menu">
                     <!-- <a class="dropdown-item" href="properties.php">Services</a> -->
-                    <a class="dropdown-item" href="#">Kitchen</a>
-                    <a class="dropdown-item" href="#">Bathroom</a>
-                    <a class="dropdown-item" href="#">Livinig Room</a>
-                    <a class="dropdown-item" href="#">Bedroom</a>
-                    <a class="dropdown-item" href="#">Balcony</a>
+                    <a class="dropdown-item" href="./living-room.php">Livinig Room</a>
+                    <a class="dropdown-item" href="./bedroom.php">Bedroom</a>
+                    <a class="dropdown-item" href="./decor-wall.php">Decor Wall</a>
+                    <a class="dropdown-item" href="./balcony.php">Balcony</a>
+                    <a class="dropdown-item" href="./dining-table.php">Dining Table</a>
+                    <a class="dropdown-item" href="./kitchen.php">Kitchen</a>
+                    <a class="dropdown-item" href="./stair.php">Stair</a>
+                    <a class="dropdown-item" href="./theater.php">Theater</a>
                 </div>
               </li>
               <li class="nav-item">
