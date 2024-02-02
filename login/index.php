@@ -25,6 +25,8 @@ error_reporting(E_ALL);
         <h2>Welcome Back, Admin!</h2>
         <p>Log in to access your account</p>
         <div class="message">
+
+            <!-- Error message -->
         <?php if(isset($_SESSION['error'])){ ?>
     <p><?php echo $_SESSION['error']; ?></p>
 <?php unset($_SESSION['error']); } ?>
