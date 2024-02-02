@@ -244,7 +244,7 @@ header .navbar {
 	top: 0;
 	position: fixed;
 	height: 100px;
-	background-color: #475b3d!important;
+	background-color: #222222!important;
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
 }
 .background-header .navbar-brand h2 {
@@ -933,7 +933,7 @@ ul.slick-dots {
 /* Footer Style */
 
 footer {
-	background-color: #232323;
+	background-color: #222222;
 	padding: 80px 0px;
 	color: #fff;
 }
@@ -1363,6 +1363,17 @@ footer .contact-form button.filled-button:hover {
 	}
 }
 
+.web-whatapp{
+	position: fixed;
+	z-index: 99;
+	bottom: 50px;
+	right: 50px;
+}
+
+.web-whatapp img{
+	width: 80px;
+}
+
 @media (max-width: 992px) {
 	.navbar .navbar-brand {
 		position: absolute;
@@ -1382,7 +1393,7 @@ footer .contact-form button.filled-button:hover {
 	    left: 0;
 	    width: 100%;
 	    text-align: center;
-	    background-color: #475b3d;
+	    background-color: #222222;
 	    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
 	}
 	.navbar .navbar-nav .nav-item {

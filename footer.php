@@ -1,4 +1,7 @@
 <footer>
+  <div class="web-whatapp">
+    <a href="https://api.whatsapp.com/send?phone=8887135297" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png" alt=""></a>
+  </div>
       <div class="container">
         <div class="row">
           <div class="col-md-3 footer-item">
