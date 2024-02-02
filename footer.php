@@ -2,7 +2,7 @@
 
 <footer>
   <div class="web-whatapp">
-    <a href="<?= $url['whatsapp']; ?>" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png" alt=""></a>
+    <a href="<?= $url['whatsapp']; ?>" target="_blank"><img src="./git assets/images/whatapp-logo.png" alt=""></a>
   </div>
       <div class="container">
         <div class="row">
