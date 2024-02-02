@@ -1,5 +1,10 @@
 
-
+<?php session_start(); 
+error_reporting(E_WARNING|E_NOTICE);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,8 +24,14 @@
     <div class="container">
         <h2>Welcome Back, Admin!</h2>
         <p>Log in to access your account</p>
-        <div class="message"></div>
-        <form class="box" id="loginForm" method="post">
+        <div class="message">
+        <?php if(isset($_SESSION['error'])){ ?>
+    <p><?php echo $_SESSION['error']; ?></p>
+<?php unset($_SESSION['error']); } ?>
+
+
+        </div>
+        <form class="box" id="loginForm" action="../controllers/AppController.php?action=admin-login" method="post">
             <div class="input">
                 <i class="fa fa-envelope"></i>
                 <input type="email" name="email" placeholder="Enter Email" required>
@@ -30,7 +41,7 @@
                 <input type="password" name="password" placeholder="Enter Your Password" required>
             </div>
             <button type="submit" class="input">Login</button>
-            <a href="">Forgot Password?</a>
+            <a href="forgot-password.html">Forgot Password?</a>
         </form>
     </div>
 </body>

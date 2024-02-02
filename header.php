@@ -1,3 +1,16 @@
+ 
+ <?php
+
+ include("controllers/DatabaseController.php");
+ include("models/UserModel.php");
+
+ $db = new DatabaseController();
+ $con = $db->getConnection();
+ $usermodel = new UserModel($con);
+ $url = $usermodel->getUrl();
+
+?>
+ 
  <!-- ***** Preloader Start ***** -->
  <div id="preloader">
         <div class="jumper">
@@ -20,9 +33,9 @@
           </div>
           <div class="col-md-4">
             <ul class="right-icons">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="<?= $url['facebook']; ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="<?= $url['twitter']; ?>" target="_balnk"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="<?= $url['linkedin']; ?>" target="_blank"><i class="fa fa-linkedin"></i></a></li>
             </ul>
           </div>
         </div>

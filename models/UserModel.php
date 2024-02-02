@@ -5,9 +5,6 @@ class UserModel {
 
     public function __construct($con) {
         $this->con = $con;
-
-        // Assuming you have a database named 'your_database_name'
-        // Replace 'your_database_name' with your actual database name.
     }
 
     public function sendMessage($data) {
@@ -25,6 +22,29 @@ class UserModel {
         }
 
         $stmt->close();
+    }
+
+    public function getUserByEmail($email) {
+        $stmt = $this->con->prepare("select * from admin where email = ?");
+        $stmt->bind_param("s",$email);
+        $stmt->execute();
+        $res = $stmt->get_result();
+
+        return $res->fetch_assoc();
+    }
+
+    public function getUrl() {
+        $stmt = $this->con->prepare("select * from social_link");
+        $stmt->execute();
+        $res = $stmt->get_result();
+
+        return $res->fetch_assoc();
+    }
+
+    public function updateUrl($url) {
+        $stmt = $this->con->prepare("update social_link set facebook=?, linkedin=?, twitter=?, whatsapp=?");
+        $stmt->bind_param("ssss",$url['facebook'],$url['linkedin'], $url['twitter'], $url['whatsapp']);
+        $stmt->execute();
     }
 }
 

@@ -1,6 +1,8 @@
+
+
 <footer>
   <div class="web-whatapp">
-    <a href="https://api.whatsapp.com/send?phone=8887135297" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png" alt=""></a>
+    <a href="<?= $url['whatsapp']; ?>" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png" alt=""></a>
   </div>
       <div class="container">
         <div class="row">
@@ -8,9 +10,9 @@
             <h4>Interior Website</h4>
             <p>An interior design company is a creative and innovative team of professionals dedicated to transforming spaces into captivating environments.</p>
             <ul class="social-icons">
-              <li><a rel="nofollow" href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a rel="nofollow" href="<?= $url['facebook']; ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="<?= $url['twitter']; ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="<?= $url['linkedin']; ?>" target="_blank"><i class="fa fa-linkedin"></i></a></li>
             </ul>
           </div>
           <div class="col-md-3 footer-item">
