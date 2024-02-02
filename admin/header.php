@@ -1,4 +1,7 @@
-<?php 
+<?php  session_start();
+if(!isset($_SESSION['id']))
+ header("location: ../index.php");
+
         include("./preloader.php"); 
 ?>
 <nav>
@@ -40,7 +43,7 @@
 
             <ul class="logout-mode">
                 <li>
-                    <a href="#" id="">
+                    <a href="../controllers/AppController.php?action=logout" id="">
                         <i class="uil uil-signout"></i>
                         <span class="link-name">Logout</span>
                     </a>
