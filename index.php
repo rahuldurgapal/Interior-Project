@@ -156,7 +156,7 @@
 
           <div class="col-md-4" style="margin: 50px auto; text-align: center">
             <div class="service-item">
-                <a href="./services.php" class="filled-button"><h3>View All Servies</h3></a>
+                <a href="./services.php" class="filled-button"><h3>View All Services</h3></a>
               </div>
             </div>
         </div>
