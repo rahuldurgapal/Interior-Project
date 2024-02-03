@@ -169,7 +169,7 @@
           <div class="row">
             <div class="col-md-6">
               <div class="left-image">
-                <img src="assets/images/about-1-570x350.jpg" class="img-fluid" alt="">
+              <img src="assets/images/logo.png"  alt="">
               </div>
             </div>
             <div class="col-md-6 align-self-center">
@@ -185,7 +185,7 @@
       </div>
     </div>
 
-    <!-- <div class="more-info">
+    <!-- style="margin-left: 40px"<div class="more-info">
       <div class="container">
         <div class="section-heading">
           <h2>Read our <em>Blog</em></h2>

@@ -54,7 +54,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="left-image">
-                    <img src="assets/images/about-1-570x350.jpg" alt="">
+                    <img src="assets/images/logo.png" style="background-color: #222222" alt="">
                   </div>
                 </div>
               </div>
