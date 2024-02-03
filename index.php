@@ -37,7 +37,7 @@
                   <h6>Interior Website</h6>
                   <h4>Dinesh Enterprises</h4>
                   <p>An interior design company is a creative and innovative team of professionals dedicated to transforming spaces into captivating environments. With expertise in color theory, spatial arrangement, and a keen eye for detail</p>
-                  <a href="properties.php" class="filled-button">Services</a>
+                  <a href="services.php" class="filled-button">Services</a>
                 </div>
             </div>
           </div>
@@ -98,7 +98,7 @@
             <div class="service-item">
               <img src="assets/img/IMG-20240115-WA0136.jpg" alt="">
               <div class="down-content">
-                <h4>Home Construction</h4>
+                <h4>Living Room Construction</h4>
                 <div style="margin-bottom:10px;">
                   <ol>
                     <li>360° Camera access of Site.</li>
@@ -107,10 +107,7 @@
                     <li>Up to 10 Years Warranty </li>
                   </ol>
                 </div>
-
-                <p>House  /  For Sale  /  100 sq m  /  2010</p>
-
-                <a href="#" class="filled-button">View More</a>
+                <a href="./living-room.php" class="filled-button">View More</a>
               </div>
             </div>
 
@@ -151,15 +148,17 @@
                     <li>45 Days Delivery </li>
                   </ol>
                 </div>
-
-             
-
                 <a href="#" class="filled-button">View More</a>
               </div>
             </div>
-
             <br>
           </div>
+
+          <div class="col-md-4" style="margin: 50px auto; text-align: center">
+            <div class="service-item">
+                <a href="./services.php" class="filled-button"><h3>View All Servies</h3></a>
+              </div>
+            </div>
         </div>
       </div>
     </div>
@@ -186,7 +185,7 @@
       </div>
     </div>
 
-    <div class="more-info">
+    <!-- <div class="more-info">
       <div class="container">
         <div class="section-heading">
           <h2>Read our <em>Blog</em></h2>
@@ -234,7 +233,7 @@
 
         
       </div>
-    </div>
+    </div> -->
 
     <div class="testimonials">
       <div class="container">
