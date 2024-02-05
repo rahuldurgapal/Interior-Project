@@ -62,6 +62,7 @@ function openModal(name, email, phone, inquiry, date) {
             </div>
             <p class="inquiry">${inquiry}</p>
             <p class="date">${date}</p>
+            <a href="#" class="delete-btn">Delete</a>
             `;
     modal.style.display = "block";
 }

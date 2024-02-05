@@ -19,6 +19,7 @@
     --box2-color: #ffe6ac;
     --box3-color: #e7d1fc;
     --title-icon-color: #fff;
+    --warn: rgb(242, 11, 11);
 
     --tran-05: all 0.5s ease;
     --tran-03: all 0.3s ease;
@@ -341,6 +342,14 @@ nav.close ~ .panel .top{
     align-items: center;
     padding: 5px; 
     font-size: small;   
+}
+
+.modal-content .delete-btn{
+    background-color: var(--warn);
+    padding: 5px 1px;
+    border-radius: 3px;
+    color: var(--text-color);
+    border: none;
 }
 
 .close {
