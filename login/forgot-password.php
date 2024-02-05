@@ -16,9 +16,9 @@
         <div class="message">
 
 <!-- Error message -->
-<?php if(isset($_SESSION['mail_error'])){ ?>
-<p><?php echo $_SESSION['mail_error']; ?></p>
-<?php unset($_SESSION['mail_error']); } ?>
+<?php if(isset($_GET['mail_error'])){ ?>
+<p><?php echo $_GET['mail_error']; ?></p>
+<?php unset($_GET['mail_error']); } ?>
 
 
 </div>

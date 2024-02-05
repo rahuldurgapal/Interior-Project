@@ -24,9 +24,9 @@ unset($_SESSION['otp']);
         <div class="message">
 
               <!-- Error message -->
-        <?php if(isset($_SESSION['pass_error'])){ ?>
-    <p><?php echo $_SESSION['pass_error']; ?></p>
-<?php unset($_SESSION['pass_error']);} ?>
+        <?php if(isset($_GET['pass_error'])){ ?>
+    <p><?php echo $_GET['pass_error']; ?></p>
+<?php unset($_GET['pass_error']);} ?>
 <?php unset($_SESSION['otp_verified']); ?>
 
         </div>

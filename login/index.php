@@ -1,10 +1,3 @@
-
-<?php session_start(); 
-error_reporting(E_WARNING|E_NOTICE);
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,16 +20,16 @@ error_reporting(E_ALL);
         <div class="message">
 
             <!-- Error message -->
-        <?php if(isset($_SESSION['error'])){ ?>
-    <p><?php echo $_SESSION['error']; ?></p>
-<?php unset($_SESSION['error']); } ?>
+        <?php if(isset($_GET['error'])){ ?>
+    <p><?php echo $_GET['error']; ?></p>
+<?php unset($_GET['error']); } ?>
 
 
         </div>
         <form class="box" id="loginForm" action="../controllers/AppController.php?action=admin-login" method="post">
             <div class="input">
                 <i class="fa fa-envelope"></i>
-                <input type="email" name="mail" placeholder="Enter Email" required>
+                <input type="email" name="email" placeholder="Enter Email" required>
             </div>
             <div class="input password">
                 <i class="fa fa-lock"></i>

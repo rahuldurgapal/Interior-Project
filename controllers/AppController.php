@@ -38,15 +38,13 @@ $action = $_GET['action'];
 
     }
 
-    else if($action === 'admin-login' && $_SERVER['REQUEST_METHOD']=='POST') {
+    else if($action === 'admin-login' && $_SERVER['REQUEST_METHOD']==='POST') {
        
       $email = filter_input(INPUT_POST, 'email');
       $password = filter_input(INPUT_POST, 'password');
 
       if(!$email || !$password) {
-         $_SESSION['error']="Invalid email or password";
-         // echo "login failed 1";
-          header("location: ../login/index.php");
+          header("location: ../login/index.php?error=Invalid email or password");
       }
 
       $user = $usermodel->getUserByEmail($email);
@@ -59,8 +57,11 @@ $action = $_GET['action'];
          exit();
       }
       else {
-         $_SESSION['error']="Invalid Email Or Password";
-         header("location: ../login/index.php");
+
+         header("location: ../login/index.php?error=Invalid Email Or Password");
+
+         // print_r($user);
+         // exit();
       }
 
     }
@@ -98,11 +99,8 @@ $action = $_GET['action'];
        $email = filter_input(INPUT_POST, 'mail');
 
        if(!$email) {
-         $_SESSION['mail_error']="please input valid email";
-         header("location: ../login/forgot_password.php");
+         header("location: ../login/forgot_password.php?mail_error=please input valid email");
        }
-
-       echo "email ok";
 
        $status = $usermodel->checkUserMail($email);
        if($status==1) {
@@ -110,8 +108,7 @@ $action = $_GET['action'];
          header("location: ../login/otp_varification.php");
        }
        else {
-          $_SESSION['mail_error'] = "The email is not registered";
-            header("location: ../login/forgot-password.php");
+            header("location: ../login/forgot-password.php?mail_error=The email is not registered");
        }
     }
 
@@ -127,8 +124,7 @@ $action = $_GET['action'];
       }
 
       else {
-         $_SESSION['otp_error'] = "OTP is not verify, Please enter correct otp";
-         header("location: ../login/otp_varification.php");
+         header("location: ../login/otp_varification.php?otp_error=OTP is not verify, Please enter correct otp");
       }
 
     }
@@ -139,19 +135,16 @@ $action = $_GET['action'];
       $cnf_pass = filter_input(INPUT_POST, 'confirm_password');
 
       if(!$pass || !$cnf_pass) {
-         $_SESSION['pass_error'] = "Invalid input";
-         header("location: ../login/change-password.php");
+         header("location: ../login/change-password.php?pass_error=Invalid input");
       }
 
       else if($pass != $cnf_pass) {
-         $_SESSION['pass_error'] = "Password are not matched";
-         header("location: ../login/change-password.php");
+         header("location: ../login/change-password.php?pass_error=Password are not matched");
       }
 
       else {
          $status = $usermodel->changePassword($pass);
-         $_SESSION['cnf_success']="Password Changed Successfully";
-         header("location: ../login/index.php");
+         header("location: ../login/index.php?cnf_success=Password Changed Successfully");
       }
 
     }

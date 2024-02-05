@@ -1,5 +1,5 @@
 <?php
 
-header("location: ../index.php");
+header("location: ../error.php");
 
 ?>

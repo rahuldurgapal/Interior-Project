@@ -23,9 +23,9 @@ echo "<script> console.log($x) </script>";
         <div class="message">
 
 <!-- Error message -->
-<?php if(isset($_SESSION['otp_error'])){ ?>
-<p><?= $_SESSION['otp_error']; ?></p>
-<?php unset($_SESSION['otp_error']); } ?>
+<?php if(isset($_GET['otp_error'])){ ?>
+<p><?= $_GET['otp_error']; ?></p>
+<?php unset($_GET['otp_error']); } ?>
 
 
 </div>
