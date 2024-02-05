@@ -52,6 +52,15 @@
                     </div>
                 </div>
             </div>
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="userData">
+                    <!-- Content will be dynamically filled in by JavaScript -->
+                    </div>
+                </div>
+            </div>
             <div class="activity">
                 <div class="title">
                     <i class="uil uil-clock-two"></i>
@@ -61,39 +70,60 @@
                 <div class="activity-data">
                     <div class="data names">
                         <span class="data-title">Name</span>
-                        <span class="data-list">Arjun Tripathi</span>
-                        <span class="data-list">Rahul Durgapal</span>
-                        <span class="data-list">Sagar Chuhan</span>
-                        <span class="data-list">Niket Narayan</span>
+                        <span class="data-list users-name">Arjun Tripathi</span>
+                        <span class="data-list users-name">Rahul Durgapal</span>
+                        <span class="data-list users-name">Sagar Chuhan</span>
+                        <span class="data-list users-name">Niket Narayan</span>
                     </div>
 
                     <div class="data emails">
                         <span class="data-title">Email</span>
-                        <span class="data-list">mearjuntripathi@gmail.com</span>
-                        <span class="data-list">rahuldurgapal@gmail.com</span>
-                        <span class="data-list">sagarvns@gmail.com</span>
-                        <span class="data-list">narayanniket@gmail.com</span>
+                        <span class="data-list users-email">mearjuntripathi@gmail.com</span>
+                        <span class="data-list users-email">rahuldurgapal@gmail.com</span>
+                        <span class="data-list users-email">sagarvns@gmail.com</span>
+                        <span class="data-list users-email">narayanniket@gmail.com</span>
+                    </div>
+
+                    <div class="data mobiles">
+                        <span class="data-title">Phone</span>
+                        <span class="data-list users-phone">+91 9876453210</span>
+                        <span class="data-list users-phone">+91 9876453210</span>
+                        <span class="data-list users-phone">+91 9876453210</span>
+                        <span class="data-list users-phone">+91 9876453210</span>
+                    </div>
+
+                    <div class="data inquiry" style="display:none">
+                        <span class="data-title">inquiry</span>
+                        <span class="data-list users-inquiry">paragraph1</span>
+                        <span class="data-list users-inquiry">paragraph2</span>
+                        <span class="data-list users-inquiry">paragraph3</span>
+                        <span class="data-list users-inquiry">paragraph4</span>
                     </div>
 
                     <div class="data joined">
                         <span class="data-title">Date</span>
-                        <span class="data-list">NEW</span>
-                        <span class="data-list">NEW</span>
-                        <span class="data-list">NEW</span>
-                        <span class="data-list">NEW</span>
+                        <span class="data-list date">02/01/2024</span>
+                        <span class="data-list date">02/01/2024</span>
+                        <span class="data-list date">02/01/2024</span>
+                        <span class="data-list date">02/01/2024</span>
                     </div>
 
                     <div class="data status">
-                        <span class="data-title">Status</span>
-                        <span class="data-list">View</span>
-                        <span class="data-list">View</span>
-                        <span class="data-list">View</span>
-                        <span class="data-list">View</span>
+                        <span class="data-title">Action</span>
+                        <span class="data-list view-btn">View</span>
+                        <span class="data-list view-btn">View</span>
+                        <span class="data-list view-btn">View</span>
+                        <span class="data-list view-btn">View</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <style>
+        
+    </style>
+
 
     <script src="../assets/admin_js/script.js" defer></script>
 </body>
