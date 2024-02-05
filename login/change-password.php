@@ -1,3 +1,12 @@
+<?php
+
+session_start();
+if(!isset($_SESSION['otp_verified'])) {
+    header("location: index.php");
+}
+unset($_SESSION['otp']);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,10 +19,18 @@
 </head>
 <body>
     <div class="container">
-        <h2>Confirm OTP, Admin!</h2>
+        <h2>Change Password, Admin!</h2>
         <p>Re-enter your password</p>
-        <div class="message"></div>
-        <form action="#" class="box" method="post" id="update">
+        <div class="message">
+
+              <!-- Error message -->
+        <?php if(isset($_SESSION['pass_error'])){ ?>
+    <p><?php echo $_SESSION['pass_error']; ?></p>
+<?php unset($_SESSION['pass_error']);} ?>
+<?php unset($_SESSION['otp_verified']); ?>
+
+        </div>
+        <form action="../controllers/AppController.php?action=cnf_pass" class="box" method="POST" id="update">
             <div class="input password">
                 <i class="fa fa-lock"></i>
                 <input type="password" name="password" placeholder="Enter Your Password" required>

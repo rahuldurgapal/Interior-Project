@@ -1,3 +1,4 @@
+<?php session_start();  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +10,19 @@
 </head>
 <body>
     <div class="container">
-        <h2>Confirm OTP, Admin!</h2>
+        <h2>Foget Password, Admin!</h2>
         <p>Enter your register Email</p>
-        <form action="../controllers/AppController.php?action=otp_verify" class="box" method="post">
+
+        <div class="message">
+
+<!-- Error message -->
+<?php if(isset($_SESSION['mail_error'])){ ?>
+<p><?php echo $_SESSION['mail_error']; ?></p>
+<?php unset($_SESSION['mail_error']); } ?>
+
+
+</div>
+        <form action="../controllers/AppController.php?action=forgot_password" class="box" method="POST">
             <div class="input">
                 <input type="mail" name="mail" placeholder="example@gmail.com" style="font-size: large;"/>
             </div>

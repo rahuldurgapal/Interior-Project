@@ -93,7 +93,7 @@ $action = $_GET['action'];
          
     }
 
-    else if(isset($action==='otp_verify') && $_SERVER['REQUEST_METHOD']==="POST") {
+    else if($action==='forgot_password' && $_SERVER['REQUEST_METHOD']==="POST") {
 
        $email = filter_input(INPUT_POST, 'mail');
 
@@ -102,7 +102,57 @@ $action = $_GET['action'];
          header("location: ../login/forgot_password.php");
        }
 
+       echo "email ok";
+
        $status = $usermodel->checkUserMail($email);
+       if($status==1) {
+         $_SESSION['otp']= rand(100000,999999);
+         header("location: ../login/otp_varification.php");
+       }
+       else {
+          $_SESSION['mail_error'] = "The email is not registered";
+            header("location: ../login/forgot-password.php");
+       }
+    }
+
+    else if($action === 'otp_verify' && $_SERVER['REQUEST_METHOD']==='POST') {
+
+      $otp = filter_input(INPUT_POST, 'otp');
+      if($otp == $_SESSION['otp']){
+  
+           //Mail function, SMTP
+
+         $_SESSION['otp_verified']="otp verify";
+         header("location: ../login/change-password.php");
+      }
+
+      else {
+         $_SESSION['otp_error'] = "OTP is not verify, Please enter correct otp";
+         header("location: ../login/otp_varification.php");
+      }
+
+    }
+
+    else if($action === 'cnf_pass' && $_SERVER['REQUEST_METHOD']==='POST') {
+
+      $pass = filter_input(INPUT_POST, 'password');
+      $cnf_pass = filter_input(INPUT_POST, 'confirm_password');
+
+      if(!$pass || !$cnf_pass) {
+         $_SESSION['pass_error'] = "Invalid input";
+         header("location: ../login/change-password.php");
+      }
+
+      else if($pass != $cnf_pass) {
+         $_SESSION['pass_error'] = "Password are not matched";
+         header("location: ../login/change-password.php");
+      }
+
+      else {
+         $status = $usermodel->changePassword($pass);
+         $_SESSION['cnf_success']="Password Changed Successfully";
+         header("location: ../login/index.php");
+      }
 
     }
 

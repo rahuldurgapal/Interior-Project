@@ -36,14 +36,14 @@ error_reporting(E_ALL);
         <form class="box" id="loginForm" action="../controllers/AppController.php?action=admin-login" method="post">
             <div class="input">
                 <i class="fa fa-envelope"></i>
-                <input type="email" name="email" placeholder="Enter Email" required>
+                <input type="email" name="mail" placeholder="Enter Email" required>
             </div>
             <div class="input password">
                 <i class="fa fa-lock"></i>
                 <input type="password" name="password" placeholder="Enter Your Password" required>
             </div>
             <button type="submit" class="input">Login</button>
-            <a href="forgot-password.html">Forgot Password?</a>
+            <a href="forgot-password.php">Forgot Password?</a>
         </form>
     </div>
 </body>

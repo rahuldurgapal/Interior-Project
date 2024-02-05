@@ -1,5 +1,10 @@
 <?php
 
+error_reporting(E_WARNING|E_NOTICE);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 class UserModel {
     private $con;
 
@@ -50,22 +55,26 @@ class UserModel {
 
     public function checkUserMail($email) {
 
+        $sataus=0;
         $stmt = $this->con->prepare("select * from admin where email=?");
         $stmt->bind_param("s",$email);
         $stmt->execute();
 
         $res = $stmt->get_result();
         if($res->num_rows > 0) {
-            $_SESSION['otp']=rand(100000,999999);
-            $_SESSION['email']=$email;
-            header("location: ../login/otp_verification.php");
+            $status=1;
+            return $status;
         }
 
-        else {
-            $_SESSION['email_error'] = "The email is not registered";
-            header("location: ../login/forgot_password.php");
-        }
+       return $sataus;
+           
+    }
 
+
+    public function changePassword($pass) {
+       $stmt = $this->con->prepare("update admin set password=?");
+       $stmt->bind_param("s",$pass);
+       $stmt->execute();
     }
 }
 

@@ -1,3 +1,12 @@
+<?php      
+session_start();
+if(!isset($_SESSION['otp'])) {
+    header("location: index.php");
+}
+$x = $_SESSION['otp'];  
+echo "<script> console.log($x) </script>";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +20,19 @@
     <div class="container">
         <h2>Confirm OTP, Admin!</h2>
         <p>Enter an OTP which you get on your email</p>
-        <form action="" class="box">
+        <div class="message">
+
+<!-- Error message -->
+<?php if(isset($_SESSION['otp_error'])){ ?>
+<p><?= $_SESSION['otp_error']; ?></p>
+<?php unset($_SESSION['otp_error']); } ?>
+
+
+</div>
+
+        <form action="../controllers/AppController.php?action=otp_verify" class="box" method="POST">
             <div class="input">
-                <input type="otp" placeholder="Enter Your OTP" style="font-size: large;"/>
+                <input type="otp" name="otp" placeholder="Enter Your OTP" style="font-size: large;"/>
             </div>
             <button type="submit" class="input">Submit</button>
         </form>
