@@ -7,9 +7,7 @@
     <!-- It is an Awesome Font Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/admin_login_css/login.css">
-    <link rel="icon" href="../assests/admin_login_image/logo.png">
-
-    <script src="script/login-signup.js" defer></script>
+    <link rel="icon" href="../assets/images/icon.png">
     <title>Admin-Login</title>
 </head>
 

@@ -13,7 +13,7 @@ echo "<script> console.log($x) </script>";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/admin_login_css/login.css">
-    <link rel="icon" href="../assets/admin_login_image/logo.png">
+    <link rel="icon" href="../assets/images/logo.png">
     <title>OTP-Varification</title>
 </head>
 <body>

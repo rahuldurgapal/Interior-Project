@@ -44,6 +44,7 @@
 
 .input{
     display: flex;
+    padding: 5px;
     width: 100%;
     color: var(--text-color);
     flex-wrap: wrap;
