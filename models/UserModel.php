@@ -46,6 +46,27 @@ class UserModel {
         $stmt->bind_param("ssss",$url['facebook'],$url['linkedin'], $url['twitter'], $url['whatsapp']);
         $stmt->execute();
     }
+
+
+    public function checkUserMail($email) {
+
+        $stmt = $this->con->prepare("select * from admin where email=?");
+        $stmt->bind_param("s",$email);
+        $stmt->execute();
+
+        $res = $stmt->get_result();
+        if($res->num_rows > 0) {
+            $_SESSION['otp']=rand(100000,999999);
+            $_SESSION['email']=$email;
+            header("location: ../login/otp_verification.php");
+        }
+
+        else {
+            $_SESSION['email_error'] = "The email is not registered";
+            header("location: ../login/forgot_password.php");
+        }
+
+    }
 }
 
 

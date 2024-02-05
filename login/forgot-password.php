@@ -11,9 +11,9 @@
     <div class="container">
         <h2>Confirm OTP, Admin!</h2>
         <p>Enter your register Email</p>
-        <form action="otp_varification.html" class="box" method="get">
+        <form action="../controllers/AppController.php?action=otp_verify" class="box" method="post">
             <div class="input">
-                <input type="mail" placeholder="example@gmail.com" style="font-size: large;"/>
+                <input type="mail" name="mail" placeholder="example@gmail.com" style="font-size: large;"/>
             </div>
             <button type="submit" class="input">Submit</button>
         </form>

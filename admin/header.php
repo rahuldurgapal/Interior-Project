@@ -21,7 +21,7 @@ if(!isset($_SESSION['id']))
                         <span class="link-name">Dashboard</span>
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="./client.php" id="">
                         <i class="uil uil-users-alt"></i>
                         <span class="link-name">Clients</span>
@@ -32,7 +32,7 @@ if(!isset($_SESSION['id']))
                         <i class="uil uil-bell"></i>
                         <span class="link-name">Notifications</span>
                     </a>
-                </li>
+                </li> -->
                 <li>
                     <a href="./inquiry.php" id="">
                         <i class="uil uil-question"></i>

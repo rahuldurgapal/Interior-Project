@@ -93,6 +93,19 @@ $action = $_GET['action'];
          
     }
 
+    else if(isset($action==='otp_verify') && $_SERVER['REQUEST_METHOD']==="POST") {
+
+       $email = filter_input(INPUT_POST, 'mail');
+
+       if(!$email) {
+         $_SESSION['mail_error']="please input valid email";
+         header("location: ../login/forgot_password.php");
+       }
+
+       $status = $usermodel->checkUserMail($email);
+
+    }
+
      else {
         echo "<h1> 404 Page not found </h1>";
      }
