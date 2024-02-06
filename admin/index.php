@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -94,7 +95,7 @@
 
                     <div class="data inquiry" style="display:none">
                         <span class="data-title">inquiry</span>
-                        <span class="data-list users-inquiry">paragraph1</span>
+                        <span class="data-list users-inquiry">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam repudiandae esse aperiam accusamus, delectus consequatur architecto molestiae distinctio, blanditiis recusandae voluptatum nisi molestias impedit. Suscipit illum doloremque necessitatibus totam laborum!</span>
                         <span class="data-list users-inquiry">paragraph2</span>
                         <span class="data-list users-inquiry">paragraph3</span>
                         <span class="data-list users-inquiry">paragraph4</span>

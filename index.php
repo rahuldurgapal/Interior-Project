@@ -1,3 +1,16 @@
+<?php
+
+session_start();
+
+  if(isset($_SESSION['request'])) {
+    $msg = $_SESSION['request'];  
+    
+      echo "<script>alert('$msg');  </script>";
+      unset($_SESSION['request']);
+  }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

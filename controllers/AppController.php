@@ -34,6 +34,7 @@ $action = $_GET['action'];
         echo "Invalid Input";
         header("location: ../index.php");
       }
+      $_SESSION['request'] = "Successfully request submitted";
        header("location: ../index.php");
 
     }

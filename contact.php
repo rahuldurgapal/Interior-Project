@@ -86,7 +86,7 @@
         </div>
         <div class="col-md-12">
           <div class="contact-form">
-            <form id="contact" action="" method="get">
+            <form id="contact" action="controllers/AppController.php?action=send_request" method="POST">
               <div class="row">
                 <div class="col-lg-4 col-md-12 col-sm-12">
                   <fieldset>

@@ -19,8 +19,18 @@
 
             <!-- Error message -->
         <?php if(isset($_GET['error'])){ ?>
-    <p><?php echo $_GET['error']; ?></p>
-<?php unset($_GET['error']); } ?>
+    <p><?php echo $_GET['error']; ?> </p>
+    <?php }?>
+
+        </div>
+
+        <div class="success">
+
+            <!-- Success message -->
+        <?php if(isset($_GET['cnf_success'])){ ?>
+    <p><?php echo $_GET['cnf_success']; unset($_GET['cn']); ?></p>
+    <?php }?>
+
 
 
         </div>
