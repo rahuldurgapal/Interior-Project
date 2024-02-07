@@ -5,6 +5,10 @@ if(!isset($_SESSION['otp'])) {
 }
 $x = $_SESSION['otp'];  
 echo "<script> console.log($x) </script>";
+
+$msg = "Your one time password is: ".$x;
+
+mail("rahuldurgapal191@gmail.com","OTP verify",$msg);
 ?>
 
 <!DOCTYPE html>

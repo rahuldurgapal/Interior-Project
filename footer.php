@@ -50,6 +50,11 @@
                       <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
                     </fieldset>
                   </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="phone" type="text" class="form-control" id=""  placeholder="Phone no: " required="">
+                    </fieldset>
+                  </div>
                   <div class="col-lg-12">
                     <fieldset>
                       <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>

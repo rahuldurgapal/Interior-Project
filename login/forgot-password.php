@@ -18,13 +18,13 @@
 <!-- Error message -->
 <?php if(isset($_GET['mail_error'])){ ?>
 <p><?php echo $_GET['mail_error']; ?></p>
-<?php unset($_GET['mail_error']); } ?>
+<?php } ?>
 
 
 </div>
         <form action="../controllers/AppController.php?action=forgot_password" class="box" method="POST">
             <div class="input">
-                <input type="mail" name="mail" placeholder="example@gmail.com" style="font-size: large;"/>
+                <input type="email" name="mail" placeholder="example@gmail.com" style="font-size: large;" requierd/>
             </div>
             <button type="submit" class="input">Submit</button>
         </form>

@@ -1,3 +1,14 @@
+<?php
+
+include("../models/UserModel.php");
+ include("../controllers/DatabaseController.php");
+
+ $db = new DatabaseController();
+ $con = $db->getConnection();
+ $usermodel = new UserModel($con);
+ $data = $usermodel->getData();
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -64,50 +75,66 @@
                 <div class="activity-data">
                     <div class="data names">
                         <span class="data-title">Name</span>
-                        <span class="data-list users-name">Arjun Tripathi</span>
-                        <span class="data-list users-name">Rahul Durgapal</span>
-                        <span class="data-list users-name">Sagar Chuhan</span>
-                        <span class="data-list users-name">Niket Narayan</span>
+                        <?php
+                         
+                         for($i=0;$i<sizeof($data);$i++) {
+                            echo "<span class='data-list users-name'>". $data[$i]['name'] . "</span>";
+                         }
+                          ?>     
                     </div>
 
                     <div class="data emails">
                         <span class="data-title">Email</span>
-                        <span class="data-list users-email">mearjuntripathi@gmail.com</span>
-                        <span class="data-list users-email">rahuldurgapal@gmail.com</span>
-                        <span class="data-list users-email">sagarvns@gmail.com</span>
-                        <span class="data-list users-email">narayanniket@gmail.com</span>
+                         <?php
+                         
+                         for($i=0;$i<sizeof($data);$i++) {
+                            echo "<span class='data-list users-email'>". $data[$i]['email'] . "</span>";
+                         }
+                          ?> 
                     </div>
 
                     <div class="data mobiles">
                         <span class="data-title">Phone</span>
-                        <span class="data-list users-phone">+91 9876453210</span>
-                        <span class="data-list users-phone">+91 9876453210</span>
-                        <span class="data-list users-phone">+91 9876453210</span>
-                        <span class="data-list users-phone">+91 9876453210</span>
+                         <?php
+                         
+                         for($i=0;$i<sizeof($data);$i++) {
+                            echo "<span class='data-list users-phone'>". $data[$i]['phone'] . "</span>";
+                         }
+                          ?> 
                     </div>
 
                     <div class="data inquiry" style="display:none">
                         <span class="data-title">inquiry</span>
-                        <span class="data-list users-inquiry">paragraph1</span>
-                        <span class="data-list users-inquiry">paragraph2</span>
-                        <span class="data-list users-inquiry">paragraph3</span>
-                        <span class="data-list users-inquiry">paragraph4</span>
+                        <?php
+                         
+                         for($i=0;$i<sizeof($data);$i++) {
+                            echo "<span class='data-list users-inquiry'>". $data[$i]['message'] . "</span>";
+                         }
+                          ?> 
                     </div>
 
                     <div class="data joined">
                         <span class="data-title">Date</span>
-                        <span class="data-list date">02/01/2024</span>
-                        <span class="data-list date">02/01/2024</span>
-                        <span class="data-list date">02/01/2024</span>
-                        <span class="data-list date">02/01/2024</span>
+                        <?php
+                         
+                         for($i=0;$i<sizeof($data);$i++) {
+                            $str = explode(" ",$data[$i]['date']);
+                            $date = DateTime::createFromFormat('Y-m-d',$str[0]);
+                            $newdate = $date->format('d/m/y');
+                            echo "<span class='data-list date'>". $newdate . "</span>";
+                         }
+                          ?> 
                     </div>
 
                     <div class="data status">
                         <span class="data-title">Action</span>
-                        <span class="data-list view-btn">View</span>
-                        <span class="data-list view-btn">View</span>
-                        <span class="data-list view-btn">View</span>
-                        <span class="data-list view-btn">View</span>
+                        <?php
+                            for($i=0;$i<sizeof($data);$i++) {
+                                echo "<span class='data-list view-btn' > View </span>";
+                                
+                            }
+                             
+                        ?>
                     </div>
                 </div>
             </div>

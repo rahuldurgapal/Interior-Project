@@ -327,7 +327,7 @@ session_start();
                   </div>
                   <div class="col-lg-4 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="">
+                      <input name="phone" type="text" class="form-control" id="subject" placeholder="Phone no: " required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-12">

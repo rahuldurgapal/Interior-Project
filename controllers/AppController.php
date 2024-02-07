@@ -21,7 +21,7 @@ $action = $_GET['action'];
     if($action === "send_request") {
        $name = filter_input(INPUT_POST, "name");
        $email = filter_input(INPUT_POST, "email");
-       $subject = filter_input(INPUT_POST, "subject");
+       $phone = filter_input(INPUT_POST, "phone");
        $message = filter_input(INPUT_POST, "message");
        
        if(!$name || !$email || !$subject || !$message) {
@@ -29,7 +29,7 @@ $action = $_GET['action'];
         header("location: ../index.php");
       }
 
-       $usermodel->sendMessage(['name'=>$name, 'email'=>$email, 'subject'=>$subject, 'message'=>$message]);
+       $usermodel->sendMessage(['name'=>$name, 'email'=>$email, 'phone'=>$phone, 'message'=>$message]);
        if(!$name || !$email || !$subject || !$message) {
         echo "Invalid Input";
         header("location: ../index.php");
