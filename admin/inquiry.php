@@ -1,5 +1,6 @@
 <?php
 
+
 include("../models/UserModel.php");
  include("../controllers/DatabaseController.php");
 
@@ -26,6 +27,13 @@ include("../models/UserModel.php");
 <body>
     <?php 
         include("./header.php"); 
+
+        if(isset($_SESSION['delete'])) {
+            $msg = $_SESSION['delete'];  
+            
+              echo "<script>alert('$msg');  </script>";
+              unset($_SESSION['delete']);
+          }
     ?>
     <section class="panel inquiry">
         <link rel="stylesheet" href="../assets/admin_css/inquiry.css">
@@ -73,7 +81,8 @@ include("../models/UserModel.php");
                 </div>
 
                 <div class="activity-data">
-                    <div class="data names">
+                  
+                    <div class="data names">   
                         <span class="data-title">Name</span>
                         <?php
                          
@@ -130,13 +139,18 @@ include("../models/UserModel.php");
                         <span class="data-title">Action</span>
                         <?php
                             for($i=0;$i<sizeof($data);$i++) {
-                                echo "<span class='data-list view-btn' > View </span>";
-                                
+                                echo "<span class='data-list view-btn' value='".$data[$i]['id']."'> View </span>";
                             }
                              
                         ?>
                     </div>
+                   
                 </div>
+                <?php
+                       if(sizeof($data)==0)
+                        echo "<br><center> <span class='data-list'> No Request Found </span> </center>";
+
+                       ?>
             </div>
     </section>
 

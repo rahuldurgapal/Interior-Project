@@ -136,13 +136,17 @@ include("../models/UserModel.php");
                         <span class="data-title">Action</span>
                         <?php
                             for($i=0;$i<sizeof($data);$i++) {
-                                echo "<span class='data-list view-btn'> View </span>";
+                                echo "<span class='data-list view-btn' value='".$data[$i]['id']."'> View </span>";
                             }
-                             
                         ?>
                     </div>
                 </div>
             </div>
+            <?php
+                       if(sizeof($data)==0)
+                        echo "<br><center> <span class='data-list'> No Request Found </span> </center>";
+
+                       ?>
         </div>
     </section>
 

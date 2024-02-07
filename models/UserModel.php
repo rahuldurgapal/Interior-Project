@@ -82,27 +82,29 @@ class UserModel {
         $stmt = $this->con->prepare("SELECT * FROM request");
 $stmt->execute();
 
-// Store the result
 $result = $stmt->get_result();
-
-// Initialize an array to store the data
 $dataArray = array();
 
-// Check the number of rows returned
+
 if ($result->num_rows > 0) {
-    // Fetch each row and add it to the array
+   
     while ($row = $result->fetch_assoc()) {
         $dataArray[] = $row;
     }
 } else {
-    // No rows found in the database
     echo "No rows found.";
 }
 
-// Close the statement
 $stmt->close();
 
 return $dataArray;
+    }
+
+    public function deleteRequest($id) {
+
+        $stmt = $this->con->prepare("delete from request where id = ?");
+        $stmt->bind_param("i",$id);
+        $stmt->execute();
     }
 }
 

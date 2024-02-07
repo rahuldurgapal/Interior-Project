@@ -52,7 +52,7 @@ var modal = document.getElementById("myModal");
 var closeBtn = document.querySelector(".close");
 
 // Function to open the modal
-function openModal(name, email, phone, inquiry, date) {
+function openModal(name, email, phone, inquiry, date,id) {
     var userDataDiv = document.getElementById("userData");
     userDataDiv.innerHTML = `
             <h2>${name}</h2>
@@ -62,7 +62,7 @@ function openModal(name, email, phone, inquiry, date) {
             </div>
             <p class="inquiry">${inquiry}</p>
             <p class="date">${date}</p>
-            <a href="#" class="delete-btn">Delete</a>
+            <a href="../controllers/AppController.php?action=deleteRequest&request_id=${id}" class="delete-btn" onclick="return confirm('Are you sure you want to delete?')">Delete</a>
             `;
     modal.style.display = "block";
 }
@@ -83,7 +83,9 @@ viewButtons.forEach(function (button, index) {
         let phone = usersPhone[index].innerText;
         let inquiry = usersInquiry[index].innerText;
         let date = dates[index].innerText;
-        openModal(name, email, phone, inquiry, date);
+        let id = button.getAttribute('value');
+        openModal(name, email, phone, inquiry, date,id);
+      
     });
 });
 

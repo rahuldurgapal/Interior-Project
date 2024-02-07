@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 02, 2024 at 06:31 PM
+-- Generation Time: Feb 07, 2024 at 06:34 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -21,15 +21,15 @@ SET time_zone = "+00:00";
 -- Database: `interior_project`
 --
 
+ create database interior_project;
+ 
+ use interior_project;
+
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `admin`
 --
-
-CREATE database interior_project;
-
-use interior_project;
 
 CREATE TABLE `admin` (
   `id` int(11) NOT NULL,
@@ -43,7 +43,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `name`, `email`, `password`) VALUES
-(1, 'Dinesh Rana', 'dineshrana@gmail.com', 'Dinesh@1234');
+(1, 'Dinesh Rana', 'dineshrana@gmail.com', 'dinesh');
 
 -- --------------------------------------------------------
 
@@ -55,17 +55,10 @@ CREATE TABLE `request` (
   `id` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `subject` varchar(255) DEFAULT NULL,
+  `phone` varchar(50) NOT NULL,
   `message` text NOT NULL,
-  `data` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+  `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `request`
---
-
-INSERT INTO `request` (`id`, `name`, `email`, `subject`, `message`, `data`) VALUES
-(5, 'Rahul Durgapal', 'rahul@gmail.com', 'test', 'This is test message', '2024-02-02 16:58:17');
 
 -- --------------------------------------------------------
 
@@ -86,7 +79,7 @@ CREATE TABLE `social_link` (
 --
 
 INSERT INTO `social_link` (`id`, `facebook`, `linkedin`, `twitter`, `whatsapp`) VALUES
-(5, 'https://facebook.com', 'https://linkedin.com', 'https://twitter.com', 'https://api.whatsapp.com/send?phone=+918887135297');
+(5, 'https://facebook.com', 'https://linkedin.com', 'https://twitter.com', '8887135297');
 
 --
 -- Indexes for dumped tables
@@ -124,7 +117,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `request`
 --
 ALTER TABLE `request`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `social_link`

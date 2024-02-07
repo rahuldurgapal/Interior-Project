@@ -1,8 +1,8 @@
 <?php
-error_reporting(E_WARNING|E_NOTICE);
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// error_reporting(E_WARNING|E_NOTICE);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 
 session_start();
 
@@ -149,6 +149,14 @@ $action = $_GET['action'];
       }
 
     }
+
+    else if ($action === "deleteRequest" && isset($_GET['request_id'])) {
+      
+      $usermodel->deleteRequest($_GET['request_id']);
+      $_SESSION['delete']="Request Delete Successfully";
+      header("location: ../admin/inquiry.php");
+  }
+  
 
      else {
         echo "<h1> 404 Page not found </h1>";

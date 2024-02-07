@@ -2,7 +2,7 @@
 
 <footer>
   <div class="web-whatapp">
-    <a href="<?= $url['whatsapp']; ?>" target="_blank"><img src="./assets/images/whatapp-logo.png" alt=""></a>
+    <a href="<?= "https://api.whatsapp.com/send?phone=+91".$url['whatsapp']; ?>" target="_blank"><img src="./assets/images/whatapp-logo.png" alt=""></a>
   </div>
       <div class="container">
         <div class="row">

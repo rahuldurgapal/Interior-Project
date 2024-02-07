@@ -68,7 +68,7 @@ error_reporting(E_ALL);
                         <input type="text" value="<?= $data['twitter']; ?>" name="twitter">
                     </div>
                     <div class="input">
-                        <label for="">Campany Whatapp URL :</label>
+                        <label for="">Campany Whatapp Number :</label>
                         <input type="text" value="<?= $data['whatsapp']; ?>" name="whatsapp">
                     </div>
                     <div class="input" style="flex-direction: column; align-items: center; gap: 30px;">
