@@ -77,7 +77,7 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Clients</a>
+                <a class="nav-link" href="./clients.php">Clients</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.php">Contact Us</a>

@@ -74,11 +74,6 @@ include("../models/UserModel.php");
                         </div>
                     </div>
                 </div>
-                <div class="activity">
-                <div class="title">
-                    <i class="uil uil-clock-two"></i>
-                    <span class="text">Recent Enquiry</span>
-                </div>
 
                 <div class="activity-data">
                   
