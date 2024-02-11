@@ -33,7 +33,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1>Our Designed Kitchens</h1>
-                    <span>We have over 20 years of experience</span>
+                    <span>We have over 14 years of experience</span>
                 </div>
             </div>
         </div>

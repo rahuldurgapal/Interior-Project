@@ -81,7 +81,7 @@
         <div class="col-md-12">
           <div class="section-heading">
             <h2>Send us a <em>message</em></h2>
-            <span>Suspendisse a ante in neque iaculis lacinia</span>
+            <span>Schedule Your Free Consultation</span>
           </div>
         </div>
         <div class="col-md-12">

@@ -33,7 +33,7 @@
       <div class="row">
         <div class="col-md-12">
           <h1>Our Servies</h1>
-          <span>Lorem ipsum dolor sit amet.</span>
+          <span>Comprehensive Interior Design Solutions for Residential and Commercial Spaces.</span>
         </div>
       </div>
     </div>

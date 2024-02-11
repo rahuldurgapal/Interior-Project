@@ -103,7 +103,7 @@ session_start();
           <div class="col-md-12">
             <div class="section-heading">
               <h2>Featured <em>Properties</em></h2>
-              <span>Aliquam id urna imperdiet libero mollis hendrerit</span>
+              <span>showcase the best of the best in real estate listings</span>
             </div>
           </div>
 
@@ -125,14 +125,14 @@ session_start();
             <div class="service-item">
               <img src="assets/img/IMG-20240115-WA0107.jpg" alt="">
               <div class="down-content">
-                <h4>Architectural Services</h4>
+                <h4>Decor-Wall Services</h4>
                 <div style="margin-bottom:10px;">
                   <p>Our experienced architects provide a wide range of services, from site analysis and planning to construction documentation and administration.</p>
                 </div>
 
                 
 
-                <a href="#" class="filled-button">View More</a>
+                <a href="decor-wall.php" class="filled-button">View More</a>
               </div>
             </div>
 
@@ -146,7 +146,7 @@ session_start();
                 <div style="margin-bottom:10px;">
                   <p>Our team of skilled craftsmen and tradespeople provide top-quality construction services, ensuring that your project is completed to the highest standards of quality and workmanship.</p>
                 </div>
-                <a href="#" class="filled-button">View More</a>
+                <a href="services.php" class="filled-button">View More</a>
               </div>
             </div>
             <br>

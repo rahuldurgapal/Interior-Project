@@ -16,7 +16,7 @@
             </ul>
           </div>
           <div class="col-md-3 footer-item">
-            <h4>Useful Links</h4>
+            <h4>Our Services</h4>
             <ul class="menu-list">
               <li><a href="living-room.php">Living Room</a></li>
               <li><a href="bedroom.php">Bedroom</a></li>
@@ -30,7 +30,7 @@
             <ul class="menu-list">
               <li><a href="about.php">About Us</a></li>
               <li><a href="services.php">Services</a></li>
-              <li><a href="testimonials.php">Testimonials</a></li>
+              <li><a href="#">Testimonials</a></li>
               <li><a href="contact.php">Contact Us</a></li>
               <li><a href="#">Blog</a></li>
             </ul>
