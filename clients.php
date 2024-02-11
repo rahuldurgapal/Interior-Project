@@ -33,7 +33,7 @@
       <div class="row">
         <div class="col-md-12">
           <h1>Our Clients</h1>
-          <span>Lorem ipsum dolor sit amet.</span>
+          <span>"Our clients are at the heart of everything we do. We partner with businesses to understand their unique needs and provide exceptional design solutions that exceed expectations. .</span>
         </div>
       </div>
     </div>

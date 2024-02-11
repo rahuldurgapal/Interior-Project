@@ -46,10 +46,10 @@
               <div class="row">
                 <div class="col-md-6 align-self-center">
                   <div class="right-content">
-                    <span>Lorem ipsum dolor sit amet</span>
+                    <span>About us</span>
                     <h2>Get to know about <em>our company</em></h2>
-                    <p>Fusce nec ultrices lectus. Duis nec scelerisque risus. Ut id tempor turpis, ac dignissim ipsum. Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo sem. 
-                    <br><br>Pellentesque in sagittis lacus, vel auctor sem. Quisque eu quam eleifend, ullamcorper dui nec, luctus quam.</p>
+                    <p>An interior design company is a creative and innovative team of professionals dedicated to transforming spaces into captivating environments. With expertise in color theory, spatial arrangement, and a keen eye for detail, our designers curate interiors that reflect individual tastes, lifestyles, and organizational needs. From residential spaces that exude comfort and style to commercial environments that inspire productivity, we craft bespoke designs tailored to each client's vision 
+                    <br><br>Whether it's revamping a single room or orchestrating a complete interior overhaul, our goal is to turn concepts into reality, resulting in spaces that not only delight the senses but also enhance everyday living and working experiences. We started the business in the year 2010. And it have been wonderful journey since then till date and aiming for many more beautiful and memorable years. </p>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -69,10 +69,10 @@
         <div class="row">
           <div class="col-md-6">
             <div class="left-content">
-              <span>Lorem ipsum dolor sit amet</span>
-              <h2>Modi esse sapiente tenetur <em>impedit laudantium laborum</em></h2>
-              <p>Pellentesque ultrices at turpis in vestibulum. Aenean pretium elit nec congue elementum. Nulla luctus laoreet porta. Maecenas at nisi tempus, porta metus vitae, faucibus augue. 
-              <br><br>Fusce et venenatis ex. Quisque varius, velit quis dictum sagittis, odio velit molestie nunc, ut posuere ante tortor ut neque.</p>
+              <!-- <span>Lorem ipsum dolor sit amet</span> -->
+              <h2>Your Vision, Our Expertise: <em>Crafting Personalized Interior Design Solutions</em></h2>
+              <p>At DR Dinesh Rana Enterprises, we believe in the power of interior design to transform spaces and enhance lives. With over a decade of experience in the industry, our team of expert designers and architects has helped countless clients achieve their vision for their homes and businesses. 
+              <br><br>Our portfolio spans a diverse range of projects, from cozy residential interiors to expansive commercial spaces. We pride ourselves on our ability to adapt to any style or budget.</p>
             </div>
           </div>
           <div class="col-md-6 align-self-center">

@@ -47,9 +47,9 @@ session_start();
           <div class="item item-1">
             <div class="img-fill">
                 <div class="text-content">
-                  <h6>Interior Website</h6>
-                  <h4>Dinesh Enterprises</h4>
-                  <p>An interior design company is a creative and innovative team of professionals dedicated to transforming spaces into captivating environments. With expertise in color theory, spatial arrangement, and a keen eye for detail</p>
+                  <h6>Crafting Your Dream Space</h6>
+                  <h4>Explore Our Range of Completed Interior Design Projects</h4>
+                  <p>Welcome to Dinesh Rana Enterprises, your one-stop solution for all your interior design and architectural needs. Our company is a creative and innovative team of professionals dedicated to transforming spaces into captivating environments.</p>
                   <a href="services.php" class="filled-button">Services</a>
                 </div>
             </div>
@@ -59,9 +59,9 @@ session_start();
           <div class="item item-2">
             <div class="img-fill">
                 <div class="text-content">
-                  <h6>magni deserunt dolorem harum quas!</h6>
-                  <h4>Aliquam iusto harum <br>  ratione porro odio</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At culpa cupiditate mollitia adipisci assumenda laborum eius quae quo excepturi, eveniet. Dicta nulla ea beatae consequuntur?</p>
+                  <h6>Crafting Your Dream Space</h6>
+                  <h4>Crafting Exceptional Spaces with Personalized Design Solutions</h4>
+                  <p>At DR Dinesh Rana Enterprises, we're committed to creating exceptional interior spaces that reflect your unique style and personality. Our experienced team of designers and architects work closely with you to understand your vision and bring it to life, using the latest design trends and technologies to deliver stunning results.</p>
                   <a href="about.php" class="filled-button">About Us</a>
                 </div>
             </div>
@@ -71,9 +71,9 @@ session_start();
           <div class="item item-3">
             <div class="img-fill">
                 <div class="text-content">
-                  <h6>alias officia qui quae vitae natus!</h6>
-                  <h4>Lorem ipsum dolor <br>sit amet, consectetur.</h4>
-                  <p>Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate mi. Sed nec cursus augue. Phasellus lacinia ac sapien vitae dapibus. Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</p>
+                  <h6>Crafting Your Dream Space</h6>
+                  <h4>Let's Create Your Dream Space Together!</h4>
+                  <p>With a focus on exceptional customer service, we're dedicated to making the design and construction process as seamless and stress-free as possible. From initial consultation to final installation, we're with you every step of the way, ensuring that your project is completed on time, on budget, and to your complete satisfaction.</p>
                   <a href="contact.php" class="filled-button">Contact Us</a>
                 </div>
             </div>
@@ -88,7 +88,7 @@ session_start();
         <div class="row">
           <div class="col-md-8">
             <h4>Request a call back right now ?</h4>
-            <span>Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</span>
+            <span> Get in Touch to Learn More About Our Interior Design Services and How We Can Help You Transform Your Space.</span>
           </div>
           <div class="col-md-4">
             <a href="contact.php" class="border-button">Contact Us</a>
@@ -113,12 +113,7 @@ session_start();
               <div class="down-content">
                 <h4>Living Room Construction</h4>
                 <div style="margin-bottom:10px;">
-                  <ol>
-                    <li>360° Camera access of Site.</li>
-                    <li>100+ Quality Checks</li>
-                    <li>251* Day Delivery</li>
-                    <li>Up to 10 Years Warranty </li>
-                  </ol>
+                  <p>From concept to completion, our team will work with you to create a functional and beautiful interior space that meets your specific needs and preferences.</p>
                 </div>
                 <a href="./living-room.php" class="filled-button">View More</a>
               </div>
@@ -132,12 +127,7 @@ session_start();
               <div class="down-content">
                 <h4>Architectural Services</h4>
                 <div style="margin-bottom:10px;">
-                  <ol>
-                    <li> Save Big on Your Construction.</li>
-                    <li>Very Affordable</li>
-                    <li>Professional Architects & Structural Engineers</li>
-                    <li>3 Days Delivery of Floor Plan </li>
-                  </ol>
+                  <p>Our experienced architects provide a wide range of services, from site analysis and planning to construction documentation and administration.</p>
                 </div>
 
                 
@@ -154,12 +144,7 @@ session_start();
               <div class="down-content">
                 <h4>Interior Designing  </h4>
                 <div style="margin-bottom:10px;">
-                  <ol>
-                    <li> 150 + Projects Delivered.</li>
-                    <li>1000+ Designs To Choose From</li>
-                    <li>Very Affordable Prices</li>
-                    <li>45 Days Delivery </li>
-                  </ol>
+                  <p>Our team of skilled craftsmen and tradespeople provide top-quality construction services, ensuring that your project is completed to the highest standards of quality and workmanship.</p>
                 </div>
                 <a href="#" class="filled-button">View More</a>
               </div>
@@ -189,7 +174,7 @@ session_start();
               <div class="right-content">
                 <span>Who we are</span>
                 <h2>Get to know about <em>our company</em></h2>
-                <p>Curabitur pulvinar sem a leo tempus facilisis. Sed non sagittis neque. Nulla conse quat tellus nibh, id molestie felis sagittis ut. Nam ullamcorper tempus ipsum in cursus</p>
+                <p>At DR Dinesh Rana Enterprises, we believe in the power of interior design to transform spaces and enhance lives. With over a decade of experience in the industry, our team of expert designers and architects has helped countless clients achieve their vision for their homes and businesses.</p>
                 <a href="about.php" class="filled-button">Read More</a>
               </div>
             </div>
@@ -260,7 +245,7 @@ session_start();
           <div class="col-md-12">
             <div class="owl-testimonials owl-carousel">
               
-              <div class="testimonial-item">
+              <!-- <div class="testimonial-item">
                 <div class="inner-content">
                   <h4>George Walker</h4>
                   <span>Chief Financial Analyst</span>
@@ -276,13 +261,13 @@ session_start();
                   <p>"In eget leo ante. Sed nibh leo, laoreet accumsan euismod quis, scelerisque a nunc. Mauris accumsan, arcu id ornare malesuada, est nulla luctus nisi."</p>
                 </div>
                 <img src="http://placehold.it/60x60" alt="">
-              </div>
+              </div> -->
               
               <div class="testimonial-item">
                 <div class="inner-content">
                   <h4>David Wood</h4>
-                  <span>Chief Accountant</span>
-                  <p>"Ut ultricies maximus turpis, in sollicitudin ligula posuere vel. Donec finibus maximus neque, vitae egestas quam imperdiet nec. Proin nec mauris eu tortor consectetur tristique."</p>
+                  <!-- <span>Chief Accountant</span> -->
+                  <p>"DR Dinesh Rana Enterprises exceeded all of our expectations with their interior design expertise. They transformed our outdated living space into a modern, functional home that we love.</p>
                 </div>
                 <img src="http://placehold.it/60x60" alt="">
               </div>
@@ -290,8 +275,8 @@ session_start();
               <div class="testimonial-item">
                 <div class="inner-content">
                   <h4>Andrew Boom</h4>
-                  <span>Marketing Head</span>
-                  <p>"Curabitur sollicitudin, tortor at suscipit volutpat, nisi arcu aliquet dui, vitae semper sem turpis quis libero. Quisque vulputate lacinia nisl ac lobortis."</p>
+                  <!-- <span>Marketing Head</span> -->
+                  <p>"We were blown away by the creativity and expertise of DR Dinesh Rana Enterprises. They helped us create a beautiful, functional kitchen that is a true reflection of our personal style and needs. </p>
                 </div>
                 <img src="http://placehold.it/60x60" alt="">
               </div>
@@ -308,7 +293,7 @@ session_start();
           <div class="col-md-12">
             <div class="section-heading">
               <h2>Request a <em>call back</em></h2>
-              <span>Etiam suscipit ante a odio consequat</span>
+              <span>Schedule Your Free Consultation</span>
             </div>
           </div>
           <div class="col-md-12">
