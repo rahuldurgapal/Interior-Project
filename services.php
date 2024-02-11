@@ -32,7 +32,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>Our Servies</h1>
+          <h1>Our Services</h1>
           <span>Comprehensive Interior Design Solutions for Residential and Commercial Spaces.</span>
         </div>
       </div>
