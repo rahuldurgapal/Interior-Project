@@ -48,8 +48,8 @@ session_start();
             <div class="img-fill">
                 <div class="text-content">
                   <h6>Crafting Your Dream Space</h6>
-                  <h4>Explore Our Range of Completed Interior Design Projects</h4>
-                  <p>Welcome to Dinesh Rana Enterprises, your one-stop solution for all your interior design and architectural needs. Our company is a creative and innovative team of professionals dedicated to transforming spaces into captivating environments.</p>
+                  <h4>Explore Our Range of Completed Interior Design</h4>
+                  <p>Welcome to Dinesh Rana Enterprises, your one-stop solution for all your interior design and architectural needs. Our company is a creative and innovative team of professionals dedicated...</p>
                   <a href="services.php" class="filled-button">Services</a>
                 </div>
             </div>
@@ -60,8 +60,8 @@ session_start();
             <div class="img-fill">
                 <div class="text-content">
                   <h6>Crafting Your Dream Space</h6>
-                  <h4>Crafting Exceptional Spaces with Personalized Design Solutions</h4>
-                  <p>At DR Dinesh Rana Enterprises, we're committed to creating exceptional interior spaces that reflect your unique style and personality. Our experienced team of designers and architects work closely with you to understand your vision and bring it to life, using the latest design trends and technologies to deliver stunning results.</p>
+                  <h4>Crafting Exceptional Spaces</h4>
+                  <p>At DR Dinesh Rana Enterprises, we're committed to creating exceptional interior spaces that reflect your unique style and personality. Our experienced team of designers and architects work closely with you...</p>
                   <a href="about.php" class="filled-button">About Us</a>
                 </div>
             </div>
@@ -72,8 +72,8 @@ session_start();
             <div class="img-fill">
                 <div class="text-content">
                   <h6>Crafting Your Dream Space</h6>
-                  <h4>Let's Create Your Dream Space Together!</h4>
-                  <p>With a focus on exceptional customer service, we're dedicated to making the design and construction process as seamless and stress-free as possible. From initial consultation to final installation, we're with you every step of the way, ensuring that your project is completed on time, on budget, and to your complete satisfaction.</p>
+                  <h4>Let's Create Your Dream!</h4>
+                  <p>With a focus on exceptional customer service, we're dedicated to making the design and construction process as seamless and stress-free as possible. From initial consultation to final installation, we're with you every step of the way...</p>
                   <a href="contact.php" class="filled-button">Contact Us</a>
                 </div>
             </div>
