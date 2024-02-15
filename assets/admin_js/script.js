@@ -56,10 +56,10 @@ function openModal(name, email, phone, inquiry, date, id) {
     var userDataDiv = document.getElementById("userData");
     userDataDiv.innerHTML = `
             <h2>${name}</h2>
-            <div style="padding:10px; text-align:center">
+            <div style="padding:10px; display:flex; align-item:center">
             <a class="icon" href="mailto://${email}"><i class="uil uil-envelope-alt"></i></a>
             <a class="icon" href="tel://${phone}"><i class="uil uil-phone-alt"></i></a>
-            <a class="icon" href="" onclick=whatsapp(${phone})><img src="../images/whatapp-logo.png" style="width: 30px;"></a>
+            <a  href="" onclick=whatsapp(${phone})><img src="../assets/images/whatapp-logo.png" style="width: 50px;"></a>
             </div>
             <p class="inquiry">${inquiry}</p>
             <p class="date">${date}</p>
