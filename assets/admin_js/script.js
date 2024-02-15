@@ -59,7 +59,7 @@ function openModal(name, email, phone, inquiry, date, id) {
             <div style="padding:10px; text-align:center">
             <a class="icon" href="mailto://${email}"><i class="uil uil-envelope-alt"></i></a>
             <a class="icon" href="tel://${phone}"><i class="uil uil-phone-alt"></i></a>
-            <a class="icon" href="" onclick=whatsapp(${phone})><img src="../images/whatapp-logo.png"></a>
+            <a class="icon" href="" onclick=whatsapp(${phone})><img src="../images/whatapp-logo.png" style="width: 30px;"></a>
             </div>
             <p class="inquiry">${inquiry}</p>
             <p class="date">${date}</p>
