@@ -2,7 +2,17 @@
 
 <footer>
   <div class="web-whatapp">
-    <a href="<?= "https://api.whatsapp.com/send?phone=+91".$url['whatsapp']; ?>" target="_blank"><img src="./assets/images/whatapp-logo.png" alt=""></a>
+    <a onclick= whatapp(<?= $url['whatsapp']; ?>) target="_blank"><img src="./assets/images/whatapp-logo.png" alt=""></a>
+    <script>
+      function detectmob() {
+        return navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ? true : false
+      }
+      function whatapp(mobile){
+        let url = detectmob() === true ? "https://api.whatsapp.com/send" : "https://web.whatsapp.com/send";
+        let w_m = url + "?phone=+91" + mobile + "&text=*Hi, Sir!*";
+        window.open(w_m, "_blank").focus();
+      }
+    </script>
   </div>
       <div class="container">
         <div class="row">
