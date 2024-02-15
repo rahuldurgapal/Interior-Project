@@ -5,6 +5,14 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
 class UserModel {
     private $con;
 
@@ -91,9 +99,7 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         $dataArray[] = $row;
     }
-} else {
-    echo "No rows found.";
-}
+} 
 
 $stmt->close();
 
@@ -106,6 +112,116 @@ return $dataArray;
         $stmt->bind_param("i",$id);
         $stmt->execute();
     }
+
+
+    public function sendMail($email,$otp) {
+         $mail = new PHPMailer(true);
+
+    try{
+         $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';  // Your SMTP server
+    $mail->SMTPAuth = true;
+    $mail->SMTPSecure = 'tls';  // Use 'tls' or 'ssl'
+    $mail->Port = 587;  // SMTP port (tls: 587, ssl: 465)
+
+    // Email content
+    $mail->setFrom('rahuldurgapal4@gmail.com', 'Rahul Durgapal');
+    $mail->addAddress($email);
+    $mail->isHTML(true);
+    $mail->Subject = 'This is the subject';
+    $mail->Body = '<b>This is HTML message.</b><h1>This is the headline.</h1> <br> <br> <p> Your otp is: '.$otp . '</p>';
+
+    // Send the email
+    $mail->send();
+    echo 'Message sent successfully...';
+} catch (Exception $e) {
+    echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+}
+    }
+
+
+    public function sendEmail($email) {
+        $mail = new PHPMailer(true);
+
+   try{
+        $mail->isSMTP();
+   $mail->Host = 'smtp.gmail.com';  // Your SMTP server
+   $mail->SMTPAuth = true;
+   $mail->SMTPSecure = 'tls';  // Use 'tls' or 'ssl'
+   $mail->Port = 587;  // SMTP port (tls: 587, ssl: 465)
+
+   // Email content
+   $mail->setFrom('rahuldurgapal4@gmail.com', 'Rahul Durgapal');
+   $mail->addAddress($email);
+   $mail->isHTML(true);
+   $mail->Subject = 'This is the subject';
+   $mail->Body = "<!DOCTYPE html>
+   <html lang='en'>
+   <head>
+       <meta charset='UTF-8'>
+       <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+       <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+       <title>We Will Connect You Soon</title>
+       <style>
+   body {
+       font-family: 'Arial', sans-serif;
+       background-color: #f4f4f4;
+       margin: 0;
+       padding: 0;
+       text-align: center;
+   }
+
+   .container {
+       max-width: 600px;
+       margin: 0 auto;
+       padding: 20px;
+       background-color: #ffffff;
+       border-radius: 10px;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   }
+
+   img {
+       max-width: 100%;
+       height: auto;
+       border-radius: 5px;
+       margin-bottom: 20px;
+   }
+
+   h2 {
+       color: #333333;
+       margin-bottom: 15px;
+   }
+
+   p {
+       color: #666666;
+       line-height: 1.6;
+       margin-bottom: 20px;
+   }
+
+   /* Responsive Styles */
+   @media screen and (max-width: 600px) {
+       .container {
+           padding: 15px;
+       }
+   }
+</style>
+   </head>
+   <body>
+       <div class='container'>
+          
+           <h2>We Will Connect You Soon</h2>
+           <p>Thank you for reaching out. Our team will connect with you soon.</p>
+       </div>
+   </body>
+   </html>";
+
+   // Send the email
+   $mail->send();
+   echo 'Message sent successfully...';
+} catch (Exception $e) {
+   echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+}
+   }
 }
 
 

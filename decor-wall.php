@@ -131,50 +131,28 @@
     </div>
 
     <div class="fun-facts">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="left-content">
-                        <span>Lorem ipsum dolor sit amet</span>
-                        <h2>Modi esse sapiente tenetur <em>impedit laudantium laborum</em></h2>
-                        <p>Pellentesque ultrices at turpis in vestibulum. Aenean pretium elit nec congue elementum.
-                            Nulla luctus laoreet porta. Maecenas at nisi tempus, porta metus vitae, faucibus augue.
-                            <br><br>Fusce et venenatis ex. Quisque varius, velit quis dictum sagittis, odio velit
-                            molestie nunc, ut posuere ante tortor ut neque.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 align-self-center">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="count-area-content">
-                                <div class="count-digit">1234</div>
-                                <div class="count-title">Properties</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="count-area-content">
-                                <div class="count-digit">2280</div>
-                                <div class="count-title">Happy clients</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="count-area-content">
-                                <div class="count-digit">15</div>
-                                <div class="count-title">Cities</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="count-area-content">
-                                <div class="count-digit">14</div>
-                                <div class="count-title">offices</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="more-info-content">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="left-image">
+              <img src="assets/images/logo.png"  alt="">
+              </div>
             </div>
+            <div class="col-md-6 align-self-center">
+              <div class="right-content">
+                <span>Who we are</span>
+                <h2>Get to know about <em>our company</em></h2>
+                <p>At DR Dinesh Rana Enterprises, we believe in the power of interior design to transform spaces and enhance lives. With over a decade of experience in the industry, our team of expert designers and architects has helped countless clients achieve their vision for their homes and businesses.</p>
+                <a href="about.php" class="filled-button">Read More</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+
+    
 
     <!-- Footer Starts Here -->
     <?php   include("footer.php");  ?>

@@ -32,7 +32,7 @@
         <div class="row">
           <div class="col-md-12">
             <h1>About Us</h1>
-            <span>We have over 20 years of experience</span>
+            <span>Our company, which was established in 2011, has over a decade of experience in the industry. Through the years, we have honed our skills and expanded our expertise, enabling us to provide high-quality products and services to our clients. </span>
           </div>
         </div>
       </div>

@@ -30,10 +30,7 @@ $action = $_GET['action'];
       }
 
        $usermodel->sendMessage(['name'=>$name, 'email'=>$email, 'phone'=>$phone, 'message'=>$message]);
-       if(!$name || !$email || !$subject || !$message) {
-        echo "Invalid Input";
-        header("location: ../index.php");
-      }
+       $usermodel->sendEmail($email);
       $_SESSION['request'] = "Successfully request submitted";
        header("location: ../index.php");
 
@@ -106,6 +103,8 @@ $action = $_GET['action'];
        $status = $usermodel->checkUserMail($email);
        if($status==1) {
          $_SESSION['otp']= rand(100000,999999);
+         $otp = $_SESSION['otp'];
+         $usermodel->sendMail($email,$otp);
          header("location: ../login/otp_varification.php");
        }
        else {

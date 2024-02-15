@@ -46,7 +46,7 @@
           <div class="contact-item">
             <i class="fa fa-phone"></i>
             <h4>Phone</h4>
-            <p>Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate nec cursus augue.</p>
+            <p>Connect us using the mobile no.</p>
             <a href="#">+91 9845528892</a><br>
             <a href="#">+91 8971138218</a>
           </div>
@@ -55,7 +55,7 @@
           <div class="contact-item">
             <i class="fa fa-envelope"></i>
             <h4>Email</h4>
-            <p>Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate nec cursus augue.</p>
+            <p>Connect us by the email.</p>
             <a href="#">dineshenterprises@gmail.com</a>
           </div>
         </div>

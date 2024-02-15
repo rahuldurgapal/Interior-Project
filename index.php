@@ -23,7 +23,7 @@ session_start();
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-    <title>DINESH ENTERPRISES | HOME</title>
+    <title>DINESH RANA ENTERPRISES | HOME</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -265,7 +265,7 @@ session_start();
               
               <div class="testimonial-item">
                 <div class="inner-content">
-                  <h4>David Wood</h4>
+                  <h4>Deepak</h4>
                   <!-- <span>Chief Accountant</span> -->
                   <p>"DR Dinesh Rana Enterprises exceeded all of our expectations with their interior design expertise. They transformed our outdated living space into a modern, functional home that we love.</p>
                 </div>
@@ -274,7 +274,7 @@ session_start();
               
               <div class="testimonial-item">
                 <div class="inner-content">
-                  <h4>Andrew Boom</h4>
+                  <h4>Sagar</h4>
                   <!-- <span>Marketing Head</span> -->
                   <p>"We were blown away by the creativity and expertise of DR Dinesh Rana Enterprises. They helped us create a beautiful, functional kitchen that is a true reflection of our personal style and needs. </p>
                 </div>

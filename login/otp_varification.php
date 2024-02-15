@@ -3,12 +3,6 @@ session_start();
 if(!isset($_SESSION['otp'])) {
     header("location: index.php");
 }
-$x = $_SESSION['otp'];  
-echo "<script> console.log($x) </script>";
-
-$msg = "Your one time password is: ".$x;
-
-mail("rahuldurgapal191@gmail.com","OTP verify",$msg);
 ?>
 
 <!DOCTYPE html>
