@@ -79,9 +79,9 @@ class UserModel {
     }
 
 
-    public function changePassword($pass) {
-       $stmt = $this->con->prepare("update admin set password=?");
-       $stmt->bind_param("s",$pass);
+    public function changePassword($pass,$email) {
+       $stmt = $this->con->prepare("update admin set password=? where email=?");
+       $stmt->bind_param("ss",$pass,$email);
        $stmt->execute();
     }
 

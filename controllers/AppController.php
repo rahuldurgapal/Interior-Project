@@ -103,6 +103,7 @@ $action = $_GET['action'];
        $status = $usermodel->checkUserMail($email);
        if($status==1) {
          $_SESSION['otp']= rand(100000,999999);
+         $_SESSION['email']=$email;
          $otp = $_SESSION['otp'];
          $usermodel->sendMail($email,$otp);
          header("location: ../login/otp_varification.php");
@@ -133,6 +134,7 @@ $action = $_GET['action'];
 
       $pass = filter_input(INPUT_POST, 'password');
       $cnf_pass = filter_input(INPUT_POST, 'confirm_password');
+      $email = $_SESSION['email'];
 
       if(!$pass || !$cnf_pass) {
          header("location: ../login/change-password.php?pass_error=Invalid input");
@@ -143,7 +145,8 @@ $action = $_GET['action'];
       }
 
       else {
-         $status = $usermodel->changePassword($pass);
+         $status = $usermodel->changePassword($pass,$email);
+         unset($_SESSION['email']);
          header("location: ../login/index.php?cnf_success=Password Changed Successfully");
       }
 

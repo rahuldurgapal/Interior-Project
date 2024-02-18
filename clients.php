@@ -45,9 +45,9 @@
       <div class="row">
         <div class="col-md-4">
           <div class="service-item">
-            <div onclick="zoomIn(this)">
+            <!-- <div onclick="zoomIn(this)">
               <img src="./assets/clients_image/Arrow.jpg" alt="">
-            </div>
+            </div> -->
             <div class="down-content">
               <h4>Arrow</h4>
 
@@ -62,9 +62,9 @@
 
         <div class="col-md-4">
           <div class="service-item">
-            <div onclick="zoomIn(this)">
+            <!-- <div onclick="zoomIn(this)">
               <img src="./assets/clients_image/autoliv-logo.png" alt="">
-            </div>
+            </div> -->
             <div class="down-content">
               <h4>Autoliv</h4>
 
@@ -79,9 +79,9 @@
 
         <div class="col-md-4">
           <div class="service-item">
-            <div onclick="zoomIn(this)">
+            <!-- <div onclick="zoomIn(this)">
               <img src="./assets/clients_image/brigade-logo.png" alt="">
-            </div>
+            </div> -->
             <div class="down-content">
               <h4>Brigade</h4>
 
@@ -96,9 +96,9 @@
 
         <div class="col-md-4">
           <div class="service-item">
-            <div onclick="zoomIn(this)">
+            <!-- <div onclick="zoomIn(this)">
               <img src="./assets/clients_image/l&t.png" alt="">
-            </div>
+            </div> -->
             <div class="down-content">
               <h4>Larsen & Toubro</h4>
 
@@ -113,9 +113,9 @@
 
         <div class="col-md-4">
           <div class="service-item">
-            <div onclick="zoomIn(this)">
+            <!-- <div onclick="zoomIn(this)">
               <img src="./assets/clients_image/levi's.jpg" alt="">
-            </div>
+            </div> -->
             <div class="down-content">
               <h4>Levi's</h4>
 
@@ -130,9 +130,9 @@
 
         <div class="col-md-4">
           <div class="service-item">
-            <div onclick="zoomIn(this)">
+            <!-- <div onclick="zoomIn(this)">
               <img src="./assets/clients_image/brady-worldwide.png" alt="">
-            </div>
+            </div> -->
             <div class="down-content">
               <h4>Brady</h4>
 

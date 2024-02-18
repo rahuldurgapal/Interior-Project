@@ -21,9 +21,9 @@ SET time_zone = "+00:00";
 -- Database: `interior_project`
 --
 
- create database interior_project;
+
  
- use interior_project;
+ 
 
 -- --------------------------------------------------------
 

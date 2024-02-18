@@ -28,7 +28,7 @@
 
             <!-- Success message -->
         <?php if(isset($_GET['cnf_success'])){ ?>
-    <p><?php echo $_GET['cnf_success']; unset($_GET['cn']); ?></p>
+    <p><?php echo $_GET['cnf_success'];  ?></p>
     <?php }?>
 
 
