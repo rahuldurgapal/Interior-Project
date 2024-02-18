@@ -32,7 +32,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Our Designed Living Rooms</h1>
+                    <h1>Our Designed <?= ?></h1>
                     <span>We have over 14 years of experience</span>
                 </div>
             </div>
@@ -42,125 +42,13 @@
     <div class="more-info about-info">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <!-- All row came here -->
+                <!-- <div class="col-md-4">
                     <div class="service-item" onclick="zoomIn(this)">
                         <img src="./assets/product-images/living-room/living-room1.jpg" alt="">
                     </div>
                     <br>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/living-room/living-room2.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/living-room/living-room3.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/living-room/living-room4.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/living-room/living-room5.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/living-room/living-room6.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/living-room/living-room7.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/living-room/living-room8.jpg" alt="">
-
-                    </div>
-                    <br>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/living-room/living-room9.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/living-room/living-room10.jpg" alt="">
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/living-room/living-room11.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/living-room/living-room12.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/living-room/living-room13.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/living-room/living-room14.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/living-room/living-room15.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/living-room/living-room16.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
+                </div> -->
             </div>
 
             <br>

@@ -42,34 +42,19 @@
     <div class="more-info about-info">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="service-item" onclick="zoomIn(this)">
                         <img src="./assets/product-images/decor-wall/decor-wall1.jpg" alt="">
                     </div>
                     <br>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="service-item" onclick="zoomIn(this)">
                         <img src="./assets/product-images/decor-wall/decor-wall2.jpg" alt="">
                     </div>
                     <br>
                 </div>
-
-                <div class="col-md-3">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/decor-wall/decor-wall5.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/decor-wall/decor-wall6.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
 
                 <div class="col-md-4">
                     <div class="service-item" onclick="zoomIn(this)">
@@ -81,6 +66,21 @@
                 <div class="col-md-4">
                     <div class="service-item" onclick="zoomIn(this)">
                         <img src="./assets/product-images/decor-wall/decor-wall4.jpg" alt="">
+                    </div>
+                    <br>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="service-item" onclick="zoomIn(this)">
+                        <img src="./assets/product-images/decor-wall/decor-wall5.jpg" alt="">
+                    </div>
+                    <br>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-item" onclick="zoomIn(this)">
+                        <img src="./assets/product-images/decor-wall/decor-wall6.jpg" alt="">
                     </div>
                     <br>
                 </div>

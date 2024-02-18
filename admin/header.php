@@ -21,7 +21,15 @@ if(!isset($_SESSION['id']))
                         <span class="link-name">Dashboard</span>
                     </a>
                 </li>
-                <!-- <li>
+                
+                <li>
+                    <a href="./inquiry.php" id="">
+                        <i class="uil uil-question"></i>
+                        <span class="link-name">Inquiry</span>
+                    </a>
+                </li>
+
+                <li>
                     <a href="./client.php" id="">
                         <i class="uil uil-users-alt"></i>
                         <span class="link-name">Clients</span>
@@ -29,14 +37,8 @@ if(!isset($_SESSION['id']))
                 </li>
                 <li>
                     <a href="./notification.php" id="">
-                        <i class="uil uil-bell"></i>
-                        <span class="link-name">Notifications</span>
-                    </a>
-                </li> -->
-                <li>
-                    <a href="./inquiry.php" id="">
-                        <i class="uil uil-question"></i>
-                        <span class="link-name">Inquiry</span>
+                        <i class="uil uil-building"></i>
+                        <span class="link-name">Services</span>
                     </a>
                 </li>
             </ul>

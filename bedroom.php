@@ -51,7 +51,37 @@
 
                 <div class="col-md-4">
                     <div class="service-item" onclick="zoomIn(this)">
+                        <img src="./assets/product-images/bedroom/bedroom2.jpg" alt="">
+                    </div>
+                    <br>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-item" onclick="zoomIn(this)">
+                        <img src="./assets/product-images/bedroom/bedroom3.jpg" alt="">
+                    </div>
+                    <br>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="service-item" onclick="zoomIn(this)">
+                        <img src="./assets/product-images/bedroom/bedroom4.jpg" alt="">
+
+                    </div>
+                    <br>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-item" onclick="zoomIn(this)">
                         <img src="./assets/product-images/bedroom/bedroom5.jpg" alt="">
+                    </div>
+                    <br>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-item" onclick="zoomIn(this)">
+                        <img src="./assets/product-images/bedroom/bedroom6.jpg" alt="">
                     </div>
                     <br>
                 </div>
@@ -67,7 +97,13 @@
                 <div class="col-md-4">
                     <div class="service-item" onclick="zoomIn(this)">
                         <img src="./assets/product-images/bedroom/bedroom8.jpg" alt="">
+                    </div>
+                    <br>
+                </div>
 
+                <div class="col-md-4">
+                    <div class="service-item" onclick="zoomIn(this)">
+                        <img src="./assets/product-images/bedroom/bedroom9.jpg" alt="">
                     </div>
                     <br>
                 </div>
@@ -81,10 +117,25 @@
 
                 <div class="col-md-4">
                     <div class="service-item" onclick="zoomIn(this)">
+                        <img src="./assets/product-images/bedroom/bedroom11.jpg" alt="">
+                    </div>
+                    <br>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-item" onclick="zoomIn(this)">
+                        <img src="./assets/product-images/bedroom/bedroom12.jpg" alt="">
+                    </div>
+                    <br>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-item" onclick="zoomIn(this)">
                         <img src="./assets/product-images/bedroom/bedroom13.jpg" alt="">
                     </div>
                     <br>
                 </div>
+
 
                 <div class="col-md-4">
                     <div class="service-item" onclick="zoomIn(this)">
@@ -92,7 +143,6 @@
                     </div>
                     <br>
                 </div>
-
 
                 <div class="col-md-4">
                     <div class="service-item" onclick="zoomIn(this)">
@@ -131,64 +181,14 @@
 
                 <div class="col-md-4">
                     <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/bedroom/bedroom21.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/bedroom/bedroom2.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/bedroom/bedroom3.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/bedroom/bedroom4.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/bedroom/bedroom6.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/bedroom/bedroom9.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/bedroom/bedroom11.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
-                        <img src="./assets/product-images/bedroom/bedroom12.jpg" alt="">
-                    </div>
-                    <br>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="service-item" onclick="zoomIn(this)">
                         <img src="./assets/product-images/bedroom/bedroom20.jpg" alt="">
+                    </div>
+                    <br>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-item" onclick="zoomIn(this)">
+                        <img src="./assets/product-images/bedroom/bedroom21.jpg" alt="">
                     </div>
                     <br>
                 </div>
