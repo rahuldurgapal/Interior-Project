@@ -32,7 +32,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Our Designed <?= ?></h1>
+                    <h1>Our Designed </h1>
                     <span>We have over 14 years of experience</span>
                 </div>
             </div>

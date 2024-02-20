@@ -317,12 +317,10 @@ nav.close ~ .panel .top{
     gap: 20px;
     text-align: center;
     align-items: center;
-    max-width: 100%;
+    width: 60%;
     max-height: 100%;
     overflow: auto;
 }
-
-
 
 .modal-content .icon{
     padding: 5px 10px;
@@ -383,6 +381,18 @@ nav.close ~ .panel .top{
     color: #000;
 }
 
+#img{
+    padding: 5px;
+    align-items: center;
+    border: 3px dotted var(--primary-color);
+}
+
+#img img{
+    width: 300px;
+    font-size: 40px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
 
 @media (max-width: 1000px) {
     nav{

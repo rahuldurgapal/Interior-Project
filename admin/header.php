@@ -30,13 +30,13 @@ if(!isset($_SESSION['id']))
                 </li>
 
                 <li>
-                    <a href="./client.php" id="">
+                    <a href="./clients.php" id="">
                         <i class="uil uil-users-alt"></i>
                         <span class="link-name">Clients</span>
                     </a>
                 </li>
                 <li>
-                    <a href="./notification.php" id="">
+                    <a href="./services.php" id="">
                         <i class="uil uil-building"></i>
                         <span class="link-name">Services</span>
                     </a>
