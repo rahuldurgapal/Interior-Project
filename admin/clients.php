@@ -42,7 +42,7 @@ include("../controllers/DatabaseController.php");
             <div class="overview">
                 <div class="title">
                     <i class="uil uil-users-alt"></i>
-                    <span class="text">Services</span>
+                    <span class="text">Clients</span>
                     <i class="uil uil-plus" style="margin-left: auto" onclick="addClient()"></i>
                 </div>
 

@@ -46,7 +46,7 @@
         <div class="col-md-4">
           <div class="service-item" >
             <div onclick="zoomIn(this)">
-              <img  src="./assets/product-images/living-room/living-room14.jpg" alt="">
+              <img  src="./assets/product-images/living-room/living-room1.jpg" alt="">
             </div>
             <div class="down-content">
               <h4>Our Designed Living Rooms</h4>
@@ -63,7 +63,7 @@
         <div class="col-md-4">
           <div class="service-item">
           <div onclick="zoomIn(this)">
-              <img  src="./assets/product-images/bedroom/bedroom10.jpg" alt="">
+              <img  src="./assets/product-images/bedroom/bedroom1.jpg" alt="">
             </div>
             <div class="down-content">
               <h4>Our Designed Bedrooms</h4>
@@ -80,7 +80,7 @@
         <div class="col-md-4">
           <div class="service-item">
           <div onclick="zoomIn(this)">
-              <img  src="./assets/product-images/kitchen/kitchen3.jpg" alt="">
+              <img  src="./assets/product-images/kitchen/kitchen1.jpg" alt="">
             </div>
             <div class="down-content">
               <h4>Our Designed Kitchens</h4>
@@ -97,7 +97,7 @@
         <div class="col-md-4">
           <div class="service-item">
           <div onclick="zoomIn(this)">
-              <img  src="./assets/product-images/decor-wall/decor-wall8.jpg" alt="">
+              <img  src="./assets/product-images/decor-wall/decor-wall1.jpg" alt="">
             </div>
             <div class="down-content">
               <h4>Our Designed Decor Wall</h4>
@@ -114,7 +114,7 @@
         <div class="col-md-4">
           <div class="service-item">
           <div onclick="zoomIn(this)">
-              <img  src="./assets/product-images/balcony/balcony2.jpg" alt="">
+              <img  src="./assets/product-images/balcony/balcony1.jpg" alt="">
             </div>
             <div class="down-content">
               <h4>Our Designed Balcony</h4>
@@ -131,7 +131,7 @@
         <div class="col-md-4">
           <div class="service-item">
           <div onclick="zoomIn(this)">
-              <img  src="./assets/product-images/dining-table/dining-table3.jpg" alt="">
+              <img  src="./assets/product-images/dining-table/dining-table1.jpg" alt="">
             </div>
             <div class="down-content">
               <h4>Our Designed Dining Table</h4>
@@ -148,7 +148,7 @@
         <div class="col-md-4">
           <div class="service-item">
           <div onclick="zoomIn(this)">
-              <img  src="./assets/product-images/stair/stair2.jpg" alt="">
+              <img  src="./assets/product-images/stair/stair1.jpg" alt="">
             </div>
             <div class="down-content">
               <h4>Our Designed Stair</h4>
