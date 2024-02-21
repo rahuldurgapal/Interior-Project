@@ -51,7 +51,7 @@ switch($query) {
         include("components/service.php");
         break;
     default:
-        header("location: error.php");
+        header("location: services.php");
 
 }
 
