@@ -222,8 +222,20 @@ return $dataArray;
    echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
 }
    }
-}
 
+   public function getService($service) {
+    
+// Assuming $service is a trusted input or has been sanitized properly
+   $stmt = $this->con->prepare("SELECT * FROM `$service`");
+
+    //  $stmt->bind_param("s",$service);
+     $stmt->execute();
+     $res=$stmt->get_result();
+
+    return $res->fetch_assoc();
+
+   }
+}
 
 
 

@@ -123,6 +123,8 @@ include("../controllers/DatabaseController.php");
                 });
             });
         });
+
+        
     </script>
     <script src="../assets/admin_js/script.js" defer></script>
 </body>

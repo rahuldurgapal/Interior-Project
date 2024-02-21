@@ -66,7 +66,7 @@
               
                 <div class="dropdown-menu">
                     <!-- <a class="dropdown-item" href="properties.php">Services</a> -->
-                    <a class="dropdown-item" href="./living-room.php">Livinig Room</a>
+                    <a class="dropdown-item" href="controllers/ServiceController.php?q=living-room">Livinig Room</a>
                     <a class="dropdown-item" href="./bedroom.php">Bedroom</a>
                     <a class="dropdown-item" href="./decor-wall.php">Decor Wall</a>
                     <a class="dropdown-item" href="./balcony.php">Balcony</a>
