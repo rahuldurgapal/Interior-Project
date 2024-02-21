@@ -389,6 +389,7 @@ nav.close ~ .panel .top{
 
 #img img{
     width: 300px;
+    max-width: fit-content;
     font-size: 40px;
     color: var(--primary-color);
     cursor: pointer;

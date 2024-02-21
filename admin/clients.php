@@ -41,57 +41,48 @@ include("../controllers/DatabaseController.php");
         <div class="dash-content">
             <div class="overview">
                 <div class="title">
-                    <i class="uil uil-building"></i>
+                    <i class="uil uil-users-alt"></i>
                     <span class="text">Services</span>
+                    <i class="uil uil-plus" style="margin-left: auto" onclick="addClient()"></i>
                 </div>
+
                 <div class="boxes">
-                    <div class="box box1" value="living-room">
-                        <i class="uil uil-building"></i>
-                        <span class="text">Living Room</span>
+                    <div class="box box1" value="client1">
+                        <i class="uil uil-user"></i>
+                        <span class="text">Arrow</span>
                         <span class="number">16 picture</span>
                     </div>
 
-                    <div class="box box2" value="bedroom">
-                        <i class="uil uil-building"></i>
-                        <span class="text">BedRoom</span>
+                    <div class="box box1" value="client2">
+                        <i class="uil uil-user"></i>
+                        <span class="text">Autoliv</span>
                         <span class="number">21 picture</span>
                     </div>
 
-                    <div class="box box3" value="decor-wall">
-                        <i class="uil uil-building"></i>
-                        <span class="text">Decor Wall</span>
+                    <div class="box box1" value="client3">
+                        <i class="uil uil-user"></i>
+                        <span class="text">Brigade</span>
                         <span class="number">11 picture</span>
                     </div>
 
-                    <div class="box box1" value="balcony">
-                        <i class="uil uil-building"></i>
-                        <span class="text">Balcony</span>
+                    <div class="box box1" value="client4">
+                        <i class="uil uil-user"></i>
+                        <span class="text">Larsen & Toubro</span>
                         <span class="number">3 picture</span>
                     </div>
 
-                    <div class="box box2" value="dinning-table">
-                        <i class="uil uil-building"></i>
-                        <span class="text">Dinning Table</span>
+                    <div class="box box1" value="client5">
+                        <i class="uil uil-user"></i>
+                        <span class="text">Levi's</span>
                         <span class="number">3 picture</span>
                     </div>
 
-                    <div class="box box3" value="kitchen">
-                        <i class="uil uil-building"></i>
-                        <span class="text">Kitchen</span>
+                    <div class="box box1" value="client6">
+                        <i class="uil uil-user"></i>
+                        <span class="text">Brady</span>
                         <span class="number">3 picture</span>
                     </div>
 
-                    <div class="box box1" value="stair">
-                        <i class="uil uil-building"></i>
-                        <span class="text">Stair</span>
-                        <span class="number">2 picture</span>
-                    </div>
-
-                    <div class="box box2" value="theater">
-                        <i class="uil uil-building"></i>
-                        <span class="text">Theater</span>
-                        <span class="number">1 picture</span>
-                    </div>
                 </div>
             </div>
             <div id="myModal" class="modal">
@@ -117,12 +108,35 @@ include("../controllers/DatabaseController.php");
                     var value = box.getAttribute('value');
                     console.log(value);
                     var number = box.querySelector('.number').innerText.replace(/\D/g, '');
+                    var name = box.querySelector('.text').innerText;
 
                     console.log("Number: " + number);
-                    uploadImageForm(value,number);
+                    uploadClientImageForm(value,name,number);
                 });
             });
         });
+
+        function addClient(){
+            var userDataDiv = document.getElementById("userData");
+            userDataDiv.innerHTML = `
+                    <h2>Add New Client</h2>
+                    <br>
+                    <hr>
+                    <br>
+                    <form action="" method="post">
+                        <lable>Name: </lable>
+                        <input name="name" placeholder="Enter Client name" />
+                        <br>
+                        <br>
+                        <lable>Info: </lable>
+                        <input name="info" placeholder="info" />
+                        <br>
+                        <br>
+                        <button name="submit">Upload</button>
+                    <form>
+                    `;
+            modal.style.display = "block";
+        }
     </script>
     <script src="../assets/admin_js/script.js" defer></script>
 </body>
