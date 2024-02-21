@@ -53,7 +53,7 @@
 
               <p>info</p>
 
-              <a href="./living-room.php" class="filled-button">View More</a>
+              <a href="service.php?q=living-room" class="filled-button">View More</a>
             </div>
           </div>
 
@@ -70,7 +70,7 @@
 
               <p>info</p>
 
-              <a href="./bedroom.php" class="filled-button">View More</a>
+              <a href="service.php?q=bedroom" class="filled-button">View More</a>
             </div>
           </div>
 
@@ -87,7 +87,7 @@
 
               <p>info</p>
 
-              <a href="./kitchen.php" class="filled-button">View More</a>
+              <a href="service.php?q=kitchen" class="filled-button">View More</a>
             </div>
           </div>
 
@@ -104,7 +104,7 @@
 
               <p>info</p>
 
-              <a href="./decor-wall.php" class="filled-button">View More</a>
+              <a href="service.php?q=decor-wall" class="filled-button">View More</a>
             </div>
           </div>
 
@@ -121,7 +121,7 @@
 
               <p>info</p>
 
-              <a href="./balcony.php" class="filled-button">View More</a>
+              <a href="service.php?q=balcony" class="filled-button">View More</a>
             </div>
           </div>
 
@@ -138,7 +138,7 @@
 
               <p>info</p>
 
-              <a href="./dining-table.php" class="filled-button">View More</a>
+              <a href="service.php?q=dining-table" class="filled-button">View More</a>
             </div>
           </div>
 
@@ -155,7 +155,7 @@
 
               <p>info</p>
 
-              <a href="./stair.php" class="filled-button">View More</a>
+              <a href="service.php?q=stair" class="filled-button">View More</a>
             </div>
           </div>
 
@@ -172,7 +172,7 @@
 
               <p>info</p>
 
-              <a href="./theater.php" class="filled-button">View More</a>
+              <a href="service.php?q=theater" class="filled-button">View More</a>
             </div>
           </div>
 

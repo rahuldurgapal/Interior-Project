@@ -24,7 +24,7 @@
   <body>
 
     <!-- Header Part -->
-    <?php include("header.php"); ?>
+    <?php include("components/header.php"); ?>
 
     <!-- Page Content -->
     <div class="page-heading header-text">
@@ -229,7 +229,7 @@
     </div>
 
   <!-- Footer Starts Here -->
-  <?php   include("footer.php");  ?>
+  <?php   include("components/footer.php");  ?>
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

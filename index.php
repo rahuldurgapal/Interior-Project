@@ -115,7 +115,7 @@ session_start();
                 <div style="margin-bottom:10px;">
                   <p>From concept to completion, our team will work with you to create a functional and beautiful interior space that meets your specific needs and preferences.</p>
                 </div>
-                <a href="./living-room.php" class="filled-button">View More</a>
+                <a href="service.php?q=living-room" class="filled-button">View More</a>
               </div>
             </div>
 
@@ -132,7 +132,7 @@ session_start();
 
                 
 
-                <a href="decor-wall.php" class="filled-button">View More</a>
+                <a href="service.php?q=decor-wall" class="filled-button">View More</a>
               </div>
             </div>
 
