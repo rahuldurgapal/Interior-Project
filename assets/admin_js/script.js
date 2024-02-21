@@ -128,6 +128,28 @@ function uploadImageForm(db, number) {
     modal.style.display = "block";
 }
 
+function uploadClientImageForm(db, name, number){
+    var userDataDiv = document.getElementById("userData");
+    userDataDiv.innerHTML = `
+            <h2>${name}</h2>
+            <br>
+            <a class="icon" href="/services"><i class="uil uil-eye"></i></a> view
+            <br>
+            <br>
+            <hr>
+            <br>
+            <form action="" method="post" enctype="multipart/form-data">
+                <input type="file" accept="image/*" id="pic" onchange="showImg(this)" style="display:none" required/>
+                <div id = "img" >
+                    <img src="" class="uil uil-plus" onclick="document.getElementById('pic').click()";></i>
+                </div>
+                <br>
+                <button name="submit" value='${db}'>Upload</button>
+            <form>
+            `;
+    modal.style.display = "block";
+}
+
 function showImg(value){
     var file = value.files[0];
 
