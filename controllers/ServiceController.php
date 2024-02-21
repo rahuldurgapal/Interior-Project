@@ -12,8 +12,17 @@ switch($query) {
 
     case 'living-room':
         $data = $usermodel->getService($query);
+        $data['folder']=$query;
         include("../service.php");
         break;
+    case 'bedroom':
+        $data = $usermodel->getService($query);
+        $data['folder']=$query;
+        include("../service.php");
+        break;
+    default:
+        header("location: ../error.php");
+
 }
 
 ?>

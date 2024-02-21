@@ -36,7 +36,7 @@ session_start();
 
   <body>
    <!-- Header Part -->
-    <?php include("header.php"); ?>
+    <?php include("components/header.php"); ?>
 
     
     <!-- Page Content -->
@@ -339,7 +339,7 @@ session_start();
     </div>
 
     <!-- Footer Starts Here -->
-    <?php   include("footer.php");  ?>
+    <?php   include("components/footer.php");  ?>
 
     
     <!-- Bootstrap core JavaScript -->

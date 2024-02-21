@@ -232,7 +232,14 @@ return $dataArray;
      $stmt->execute();
      $res=$stmt->get_result();
 
-    return $res->fetch_assoc();
+     $data = array();
+
+    while($row=$res->fetch_assoc()) {
+        $data[] = $row;
+    }
+
+    $stmt->close();
+   return $data;
 
    }
 }

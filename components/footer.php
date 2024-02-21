@@ -28,11 +28,11 @@
           <div class="col-md-3 footer-item">
             <h4>Our Services</h4>
             <ul class="menu-list">
-              <li><a href="living-room.php">Living Room</a></li>
-              <li><a href="bedroom.php">Bedroom</a></li>
-              <li><a href="balcony.php">Balcony</a></li>
-              <li><a href="kitchen.php">Kitchen</a></li>
-              <li><a href="theater.php">Theater</a></li>
+            <li><a href="service.php?q=living-room">Living Room</a></li>
+              <li><a href="service.php?q=bedroom">Bedroom</a></li>
+              <li><a href="service.php?q=balcony">Balcony</a></li>
+              <li><a href="service.php?q=kitchen">Kitchen</a></li>
+              <li><a href="service.php?q=theater">Theater</a></li>
             </ul>
           </div>
           <div class="col-md-3 footer-item">

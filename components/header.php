@@ -1,6 +1,11 @@
  
  <?php
 
+ error_reporting(E_WARNING|E_NOTICE);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
  include("controllers/DatabaseController.php");
  include("models/UserModel.php");
 
@@ -66,14 +71,14 @@
               
                 <div class="dropdown-menu">
                     <!-- <a class="dropdown-item" href="properties.php">Services</a> -->
-                    <a class="dropdown-item" href="controllers/ServiceController.php?q=living-room">Livinig Room</a>
-                    <a class="dropdown-item" href="./bedroom.php">Bedroom</a>
-                    <a class="dropdown-item" href="./decor-wall.php">Decor Wall</a>
-                    <a class="dropdown-item" href="./balcony.php">Balcony</a>
-                    <a class="dropdown-item" href="./dining-table.php">Dining Table</a>
-                    <a class="dropdown-item" href="./kitchen.php">Kitchen</a>
-                    <a class="dropdown-item" href="./stair.php">Stair</a>
-                    <a class="dropdown-item" href="./theater.php">Theater</a>
+                    <a class="dropdown-item" href="service.php?q=living-room">Livinig Room</a>
+                    <a class="dropdown-item" href="service.php?q=bedroom">Bedroom</a>
+                    <a class="dropdown-item" href="service.php?q=decor-wall">Decor Wall</a>
+                    <a class="dropdown-item" href="service.php?q=balcony">Balcony</a>
+                    <a class="dropdown-item" href="service.php?q=dining-table">Dining Table</a>
+                    <a class="dropdown-item" href="service.php?q=kitchen">Kitchen</a>
+                    <a class="dropdown-item" href="service.php?q=stair">Stair</a>
+                    <a class="dropdown-item" href="service.php?q=theater">Theater</a>
                 </div>
               </li>
               <li class="nav-item">

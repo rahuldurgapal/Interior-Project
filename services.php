@@ -25,7 +25,7 @@
 <body>
 
   <!-- Header Part -->
-  <?php include("header.php"); ?>
+  <?php include("components/header.php"); ?>
 
   <!-- Page Content -->
   <div class="page-heading header-text">
@@ -212,7 +212,7 @@
   </div>
 
   <!-- Footer Starts Here -->
-  <?php   include("footer.php");  ?>
+  <?php   include("components/footer.php");  ?>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
