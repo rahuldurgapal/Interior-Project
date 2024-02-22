@@ -53,49 +53,49 @@ include("../controllers/DatabaseController.php");
                     <div class="box box1" value="living-room">
                         <i class="uil uil-building"></i>
                         <span class="text">Living Room</span>
-                        <span class="number">16 picture</span>
+                        <span class="number">picture</span>
                     </div>
 
                     <div class="box box2" value="bedroom">
                         <i class="uil uil-building"></i>
                         <span class="text">BedRoom</span>
-                        <span class="number">21 picture</span>
+                        <span class="number">picture</span>
                     </div>
 
                     <div class="box box3" value="decor-wall">
                         <i class="uil uil-building"></i>
                         <span class="text">Decor Wall</span>
-                        <span class="number">11 picture</span>
+                        <span class="number">picture</span>
                     </div>
 
                     <div class="box box1" value="balcony">
                         <i class="uil uil-building"></i>
                         <span class="text">Balcony</span>
-                        <span class="number">3 picture</span>
+                        <span class="number">picture</span>
                     </div>
 
                     <div class="box box2" value="dinning-table">
                         <i class="uil uil-building"></i>
                         <span class="text">Dinning Table</span>
-                        <span class="number">3 picture</span>
+                        <span class="number">picture</span>
                     </div>
 
                     <div class="box box3" value="kitchen">
                         <i class="uil uil-building"></i>
                         <span class="text">Kitchen</span>
-                        <span class="number">3 picture</span>
+                        <span class="number">picture</span>
                     </div>
 
                     <div class="box box1" value="stair">
                         <i class="uil uil-building"></i>
                         <span class="text">Stair</span>
-                        <span class="number">2 picture</span>
+                        <span class="number">picture</span>
                     </div>
 
                     <div class="box box2" value="theater">
                         <i class="uil uil-building"></i>
                         <span class="text">Theater</span>
-                        <span class="number">1 picture</span>
+                        <span class="number">picture</span>
                     </div>
                 </div>
             </div>

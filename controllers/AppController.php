@@ -180,6 +180,45 @@ $action = $_GET['action'];
     }
 
  }
+
+   else if($action==='addClient' && $_SERVER['REQUEST_METHOD']==='POST') {
+      $id = filter_input(INPUT_POST,'client_id');
+      $name = filter_input(INPUT_POST,'client_name');
+      
+     // Add Client
+      if($usermodel->addClient($name)) {
+         if($usermodel->createClient()) {
+            header("location: ../admin/clients.php?q=client add successfully");
+         } else {
+            echo "failed to create client table";
+         }
+      } else {
+         echo "failed to insert data in client table";
+      }
+
+   }
+
+   else if($action==='uploadClientImage' && $_SERVER['REQUEST_METHOD']==='POST') {
+
+      $table = filter_input(INPUT_POST,'table');
+      $targetDirectory = "../assets/clients_image/";
+      $targetFile = $targetDirectory.basename($_FILES['image']['name']);
+
+    if(move_uploaded_file($_FILES['image']['tmp_name'],$targetFile)) {
+
+      $status = $usermodel->uploadClientImage($_FILES['image']['name'],$table);
+      if($status==1) {
+         header("location: ../admin/clients.php?upload=file upload successfully");
+      }
+      else {
+         echo "file not uploades in database";
+      }
+    }
+    else {
+      echo "file not uploades in local folder";
+    }
+      
+   }
   
 
      else {

@@ -6,7 +6,7 @@ include("../controllers/DatabaseController.php");
  $db = new DatabaseController();
  $con = $db->getConnection();
  $usermodel = new UserModel($con);
- $data = $usermodel->getData();
+ $data = $usermodel->getClients();
 
 ?>
 
@@ -47,43 +47,16 @@ include("../controllers/DatabaseController.php");
                 </div>
 
                 <div class="boxes">
+                    <?php  for($i=0;$i<sizeof($data);$i++) { ?>
                     <div class="box box1" value="client1">
                         <i class="uil uil-user"></i>
-                        <span class="text">Arrow</span>
-                        <span class="number">16 picture</span>
+                        <span class="text"><?= $data[$i]['client_company'] ?></span>
+                        <span class="text1" style="display: none;"><?php echo"client_".$data[$i]['id'] ?></span>
+                        <span class="number">picture</span>
+                    </div>
+                    <?php  }   ?>
                     </div>
 
-                    <div class="box box1" value="client2">
-                        <i class="uil uil-user"></i>
-                        <span class="text">Autoliv</span>
-                        <span class="number">21 picture</span>
-                    </div>
-
-                    <div class="box box1" value="client3">
-                        <i class="uil uil-user"></i>
-                        <span class="text">Brigade</span>
-                        <span class="number">11 picture</span>
-                    </div>
-
-                    <div class="box box1" value="client4">
-                        <i class="uil uil-user"></i>
-                        <span class="text">Larsen & Toubro</span>
-                        <span class="number">3 picture</span>
-                    </div>
-
-                    <div class="box box1" value="client5">
-                        <i class="uil uil-user"></i>
-                        <span class="text">Levi's</span>
-                        <span class="number">3 picture</span>
-                    </div>
-
-                    <div class="box box1" value="client6">
-                        <i class="uil uil-user"></i>
-                        <span class="text">Brady</span>
-                        <span class="number">3 picture</span>
-                    </div>
-
-                </div>
             </div>
             <div id="myModal" class="modal">
                 <!-- Modal content -->
@@ -109,9 +82,11 @@ include("../controllers/DatabaseController.php");
                     console.log(value);
                     var number = box.querySelector('.number').innerText.replace(/\D/g, '');
                     var name = box.querySelector('.text').innerText;
+                    var table = box.querySelector('.text1').innerText;
 
                     console.log("Number: " + number);
-                    uploadClientImageForm(value,name,number);
+                    console.log("Table: "+table);
+                    uploadClientImageForm(value,name,table,number);
                 });
             });
         });
@@ -123,13 +98,10 @@ include("../controllers/DatabaseController.php");
                     <br>
                     <hr>
                     <br>
-                    <form action="" method="post">
+                    <form action="../controllers/AppController.php?action=addClient" method="post">
                         <lable>Name: </lable>
-                        <input name="name" placeholder="Enter Client name" />
-                        <br>
-                        <br>
-                        <lable>Info: </lable>
-                        <input name="info" placeholder="info" />
+                        <input type="hidden" name="client_id" value=<?= $i ?> />
+                        <input type="text" name="client_name" placeholder="Enter Client name" />
                         <br>
                         <br>
                         <button name="submit">Upload</button>

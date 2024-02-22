@@ -129,7 +129,7 @@ function uploadImageForm(db, number) {
     modal.style.display = "block";
 }
 
-function uploadClientImageForm(db, name, number){
+function uploadClientImageForm(db,name,table,number){
     var userDataDiv = document.getElementById("userData");
     userDataDiv.innerHTML = `
             <h2>${name}</h2>
@@ -139,8 +139,9 @@ function uploadClientImageForm(db, name, number){
             <br>
             <hr>
             <br>
-            <form action="../contorllers/AppContorller.php?action=uploadClient" method="post" enctype="multipart/form-data">
-                <input type="file" accept="image/*" id="pic" onchange="showImg(this)" style="display:none" required/>
+            <form action="../controllers/AppController.php?action=uploadClientImage" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="table" value=${table} />
+                <input type="file" name="image" accept="image/*" id="pic" onchange="showImg(this)" style="display:none" required/>
                 <div id = "img" >
                     <img src="" class="uil uil-plus" onclick="document.getElementById('pic').click()";></i>
                 </div>

@@ -291,6 +291,49 @@ return $dataArray;
 
     return $status;
    }
+  
+   public function addClient($name) {
+    $stmt = $this->con->prepare("INSERT INTO `clients` (`client_company`) VALUES (?)");
+    $stmt->bind_param("s", $name);    
+     if($stmt->execute())
+      return true;
+     
+    return false;
+
+   }
+
+   public function createClient() {
+    $id = $this->getClientId();
+    $table = "client_".$id;
+    $stmt = $this->con->prepare("CREATE TABLE `$table` (id INT PRIMARY KEY AUTO_INCREMENT, image VARCHAR(255) NOT NULL)");
+   
+    if($stmt->execute()) {
+        return true;
+    }
+
+    return false;
+   }
+
+   public function getClientId() {
+    $stmt=$this->con->prepare("SELECT * FROM `clients` ORDER BY id DESC LIMIT 1");
+    $stmt->execute();
+    $res = $stmt->get_result();
+    $id = $res->fetch_assoc();
+
+    return $id['id'];
+   }
+
+   public function uploadClientImage($file,$table) {
+    $status=0;
+    $stmt=$this->con->prepare("INSERT INTO `$table`(`image`) VALUES (?)");
+    $stmt->bind_param("s",$file);
+    if($stmt->execute()){
+        $status =1;
+    }
+
+    return $status;
+   }
+  
 }
 
 
