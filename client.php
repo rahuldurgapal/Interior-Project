@@ -1,124 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
+if(!isset($_GET['id']) || !isset($_GET['name']) || $_GET['name']=="")
+ header("location: clients.php");
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <link rel="icon" href="./assets/images/icon.png">
-  <meta name="author" content="">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
-    rel="stylesheet">
+include("controllers/DatabaseController.php");
+include("models/UserModel.php");
 
-  <title>DINESH ENTERPRISES | Client</title>
+$db = new DatabaseController();
+$con = $db->getConnection();
+$usermodel = new UserModel($con);
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+$id = $con->real_escape_string($_GET['id']);
+$name=$_GET['name'];
 
-  <!-- Additional CSS Files -->
-  <link rel="stylesheet" href="assets/css/fontawesome.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/owl.css">
-</head>
+$query="client_".$id;
 
-<body>
+$tables = $usermodel->getTables();
 
-  <!-- Header Part -->
-  <?php include("components/header.php"); ?>
+if(in_array($query,$tables)) {
+  $url = $usermodel->getUrl();
+  $data=$usermodel->getClientImage($query);
+  include("components/client.php");
+}
 
-  <!-- Page Content -->
-  <div class="page-heading header-text">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>Client Name</h1>
-          <span>info</span>
-        </div>
-      </div>
-    </div>
-  </div>
+else
+ header("location: clients.php");
 
-  <div class="services">
-    <div class="container">
 
-      <div class="row">
-        
-        <!-- <div class="col-md-4">
-          <div class="service-item" onclick="zoomIn(this)">
-            <img src="assets/client-images/<?= $data['folder'] ?>/<?= $data[$i]['image'] ?>" alt="">
-          </div>
-          <br>
-        </div> -->
-
-      </div>
-
-      <br>
-      <br>
-      <br>
-      <br>
-    </div>
-  </div>
-
-  <!-- Footer Starts Here -->
-  <?php   include("components/footer.php");  ?>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Additional Scripts -->
-  <script src="assets/js/custom.js"></script>
-  <script src="assets/js/owl.js"></script>
-  <script src="assets/js/slick.js"></script>
-  <script src="assets/js/accordions.js"></script>
-
-  <script language="text/Javascript">
-    cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-    function clearField(t) {                   //declaring the array outside of the
-      if (!cleared[t.id]) {                      // function makes it static and global
-        cleared[t.id] = 1;  // you could use true and false, but that's more typing
-        t.value = '';         // with more chance of typos
-        t.style.color = '#fff';
-      }
-    }
-  </script>
-
-  <script>
-    function zoomIn(element) {
-      // Create a container for the zoomed image
-      var zoomContainer = document.createElement("div");
-      zoomContainer.id = "zoom-container";
-
-      // Create the zoomed image
-      var zoomedImage = document.createElement("img");
-      zoomedImage.src = element.querySelector("img").src;
-      zoomedImage.id = "zoomed-image";
-
-      // Create close button
-      var closeButton = document.createElement("span");
-      closeButton.id = "close-button";
-      closeButton.innerHTML = "&times;";
-      closeButton.onclick = function () {
-        document.body.removeChild(zoomContainer);
-      };
-
-      // Append elements to the container
-      zoomContainer.appendChild(zoomedImage);
-      zoomContainer.appendChild(closeButton);
-
-      // Append container to the body
-      document.body.appendChild(zoomContainer);
-
-      // Add event listener to close on Esc key press
-      document.addEventListener("keydown", function (event) {
-        if (event.key === "Escape") {
-          document.body.removeChild(zoomContainer);
-        }
-      });
-    }
-  </script>
-
-</body>
-
-</html>
+?>

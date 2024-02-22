@@ -39,111 +39,27 @@
     </div>
   </div>
 
+  <?php  $data = $usermodel->getClients();  ?>
   <div class="services">
     <div class="container">
 
       <div class="row">
+        <?php for($i=0;$i<sizeof($data);$i++) { ?>
         <div class="col-md-4">
           <div class="service-item">
-            <!-- <div onclick="zoomIn(this)">
-              <img src="./assets/clients_image/Arrow.jpg" alt="">
-            </div> -->
             <div class="down-content">
-              <h4>Arrow</h4>
+              <h4><?= $data[$i]['client_company'] ?></h4>
 
               <p>info</p>
 
-              <a href="" class="filled-button">View More</a>
+              <a href="client.php?id=<?= $data[$i]['id'] ?>&name=<?= $data[$i]['client_company'] ?>" class="filled-button">View More</a>
             </div>
           </div>
 
           <br>
         </div>
 
-        <div class="col-md-4">
-          <div class="service-item">
-            <!-- <div onclick="zoomIn(this)">
-              <img src="./assets/clients_image/autoliv-logo.png" alt="">
-            </div> -->
-            <div class="down-content">
-              <h4>Autoliv</h4>
-
-              <p>info</p>
-
-              <a href="" class="filled-button">View More</a>
-            </div>
-          </div>
-
-          <br>
-        </div>
-
-        <div class="col-md-4">
-          <div class="service-item">
-            <!-- <div onclick="zoomIn(this)">
-              <img src="./assets/clients_image/brigade-logo.png" alt="">
-            </div> -->
-            <div class="down-content">
-              <h4>Brigade</h4>
-
-              <p>info</p>
-
-              <a href="" class="filled-button">View More</a>
-            </div>
-          </div>
-
-          <br>
-        </div>
-
-        <div class="col-md-4">
-          <div class="service-item">
-            <!-- <div onclick="zoomIn(this)">
-              <img src="./assets/clients_image/l&t.png" alt="">
-            </div> -->
-            <div class="down-content">
-              <h4>Larsen & Toubro</h4>
-
-              <p>info</p>
-
-              <a href="" class="filled-button">View More</a>
-            </div>
-          </div>
-
-          <br>
-        </div>
-
-        <div class="col-md-4">
-          <div class="service-item">
-            <!-- <div onclick="zoomIn(this)">
-              <img src="./assets/clients_image/levi's.jpg" alt="">
-            </div> -->
-            <div class="down-content">
-              <h4>Levi's</h4>
-
-              <p>info</p>
-
-              <a href="./dining-table.php" class="filled-button">View More</a>
-            </div>
-          </div>
-
-          <br>
-        </div>
-
-        <div class="col-md-4">
-          <div class="service-item">
-            <!-- <div onclick="zoomIn(this)">
-              <img src="./assets/clients_image/brady-worldwide.png" alt="">
-            </div> -->
-            <div class="down-content">
-              <h4>Brady</h4>
-
-              <p>info</p>
-
-              <a href="" class="filled-button">View More</a>
-            </div>
-          </div>
-
-          <br>
-        </div>
+        <?php }  ?>
 
       </div>
 
@@ -216,3 +132,4 @@
 </body>
 
 </html>
+

@@ -242,6 +242,44 @@ return $dataArray;
    return $data;
 
    }
+
+
+   public function getClients() {
+    $stmt=$this->con->prepare("select * from clients");
+    $stmt->execute();
+    $res = $stmt->get_result();
+    $data = array();
+
+    while($row=$res->fetch_assoc()) {
+        $data[] = $row;
+    }
+
+    $stmt->close();
+    return $data;
+   }
+
+   public function getTables() {
+    $result = $this->con->query("show tables");
+    $table=[];
+    while($row=$result->fetch_row()){
+        $table[] = $row[0];
+    }
+
+    return $table;
+   }
+
+   public function getClientImage($table) {
+    $stmt = $this->con->prepare("SELECT * FROM `$table`");
+    $stmt->execute();
+    $res = $stmt->get_result();
+    $data = array();
+
+    while($row=$res->fetch_assoc()) {
+        $data[] = $row;
+    }
+
+    return $data;
+   }
 }
 
 
