@@ -1,5 +1,10 @@
 <?php
 
+if(isset($_GET['upload'])) {
+    $msg = $_GET['upload'];
+    echo "<script>alert('$msg');  </script>";
+}
+
 include("../models/UserModel.php");
 include("../controllers/DatabaseController.php");
 

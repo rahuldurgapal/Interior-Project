@@ -116,8 +116,9 @@ function uploadImageForm(db, number) {
             <br>
             <hr>
             <br>
-            <form action="" method="post" enctype="multipart/form-data">
-                <input type="file" accept="image/*" id="pic" onchange="showImg(this)" style="display:none" required/>
+            <form action="../controllers/AppController.php?action=uploadServiceImage" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="folder" value=${db} />
+                <input type="file" accept="image/*" name="image" id="pic" onchange="showImg(this)" style="display:none" required/>
                 <div id = "img" >
                     <img src="" class="uil uil-plus" onclick="document.getElementById('pic').click()";></i>
                 </div>
@@ -138,7 +139,7 @@ function uploadClientImageForm(db, name, number){
             <br>
             <hr>
             <br>
-            <form action="" method="post" enctype="multipart/form-data">
+            <form action="../contorllers/AppContorller.php?action=uploadClient" method="post" enctype="multipart/form-data">
                 <input type="file" accept="image/*" id="pic" onchange="showImg(this)" style="display:none" required/>
                 <div id = "img" >
                     <img src="" class="uil uil-plus" onclick="document.getElementById('pic').click()";></i>

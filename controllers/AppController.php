@@ -158,6 +158,28 @@ $action = $_GET['action'];
       $_SESSION['delete']="Request Delete Successfully";
       header("location: ../admin/inquiry.php");
   }
+
+  else if($action === "uploadServiceImage" && $_SERVER['REQUEST_METHOD']==='POST') {
+    
+    $folder = filter_input(INPUT_POST,'folder');
+    $targetDirectory = "../assets/product-images/".$folder."/";
+    $targetFile = $targetDirectory.basename($_FILES['image']['name']);
+
+    if(move_uploaded_file($_FILES['image']['tmp_name'],$targetFile)) {
+
+      $status = $usermodel->uploadServiceImage($_FILES['image']['name'],$folder);
+      if($status==1) {
+         header("location: ../admin/services.php?upload=file upload successfully");
+      }
+      else {
+         echo "file not uploades in database";
+      }
+    }
+    else {
+      echo "file not uploades in local folder";
+    }
+
+ }
   
 
      else {

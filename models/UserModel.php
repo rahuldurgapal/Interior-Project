@@ -280,6 +280,17 @@ return $dataArray;
 
     return $data;
    }
+
+   public function uploadServiceImage($file,$table) {
+    $status=0;
+    $stmt=$this->con->prepare("INSERT INTO `$table`(`image`) VALUES (?)");
+    $stmt->bind_param("s",$file);
+    if($stmt->execute()){
+        $status =1;
+    }
+
+    return $status;
+   }
 }
 
 
